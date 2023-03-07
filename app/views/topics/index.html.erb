@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>Featured Courses</h1>
+    </div>
+  </div>
+
+  Total topics  <%= @topics.count %>
+  <% @topics.each do |topic| %>
+    <%= topic.title %>
+    <%= topic.user.email %>
+  <% end %>
+
+  <div class="row">
+    <div class="col">
+      <p>You searched for <strong><%= @topic.title %></strong>. We found <%= @topic.user.count %> mentors waiting to help you.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <% @topics.user.each do |user| %>
+    <h4><%= user.email %></h4>
+    <% end %>
+  </div>
+</div>
