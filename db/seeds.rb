@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-# Topic.destroy_all
-
-
+Topic.destroy_all
+khalid = User.create(email: 'khalid@evolve.com', password: '123456')
+category = Category.create(name: 'Maths')
+Topic.create(title: 'Algorithmics', description: 'ce nest pas sorcier', pph: 100, user: khalid, category: category)
