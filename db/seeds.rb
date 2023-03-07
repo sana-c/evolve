@@ -7,10 +7,4 @@
 #   Character.create(name: "Luke", movie: movies.first)
 # Topic.destroy_all
 
-# 10.times do
-#   Topic.create!(
-#   title:"math",
-#   description:"best fdfdfhfh",
-#   pph: 100.00,
-# )
-# end
+
