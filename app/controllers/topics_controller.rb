@@ -3,6 +3,7 @@ class TopicsController < ApplicationController
 
   def index
     @topics = Topic.all
+    @prof_count = Topic.pluck(:user_id).uniq.count
   end
 
   def show

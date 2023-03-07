@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+#topics {
+  .card{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif !important;
+    margin-top: 32px;
+    width: 256px;
+    height: 256px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    h3{
+      margin-top: 40px;
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 18px;
+      padding-left: 16px;
+    }
+    i{
+      color: #b1b1b1;
+    }
+    span.text{
+      color:#616161;
+    }
+  }
+  .course-img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    border-radius: 16px;
+    margin: 8px;
+    max-height: 140px;
+    max-width: 230px;
+  }
+  .price {
+    border-radius: 8px;
+    background-color: #2e8dff;
+    padding: 4px 12px;
+    color: white;
+    font-weight: bolder;
+  }
+  .floating{
+    background-color: white;
+    top: 123px;
+    border-radius: 16px;
+    position: absolute;
+    width: 180px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
