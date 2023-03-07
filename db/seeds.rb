@@ -5,7 +5,27 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
 Topic.destroy_all
-khalid = User.create(email: 'khalid@evolve.com', password: '123456')
-category = Category.create(name: 'Maths')
-Topic.create(title: 'Algorithmics', description: 'ce nest pas sorcier', pph: 100, user: khalid, category: category)
+User.destroy_all
+Category.destroy_all
+
+20.times do
+  usern = User.create!(
+    email: Faker::Internet.email,
+    password: Faker::Internet.password,
+    first_name: Faker::FunnyName.two_word_name
+  )
+  categoryn = Category.create!(
+    name: Faker::Educator.subject
+  )
+  Topic.create!(
+    title: Faker::Educator.course_name,
+    description: Faker::Books::Lovecraft.sentence,
+    pph: Faker::Number.decimal(l_digits: 2),
+    user: usern,
+    category: categoryn
+  )
+end
+
+p "Created #{Topic.count} topics"
