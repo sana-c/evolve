@@ -13,6 +13,7 @@ class TopicsController < ApplicationController
 
   def new
     @topic = Topic.new
+    @user = current_user
   end
 
   def create

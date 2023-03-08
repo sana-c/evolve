@@ -1,0 +1,9 @@
+<h1>Please add a New Topic </h1>
+<%= simple_form_for [@user, @topic] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :pph %>
+  <%= f.input :category %>
+
+  <%= f.submit "Create the topic", class: "btn btn-primary" %>
+<% end %>
