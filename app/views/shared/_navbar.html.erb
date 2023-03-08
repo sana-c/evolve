@@ -38,13 +38,11 @@
         </li>
         <li >
         <% if user_signed_in? %>
-          
-          <i class="fa-solid fa-chalkboard-user">
-           <span><%= link_to "Become a Mentor", new_user_topic_path(current_user) %></span>
-          </i>
-            
-      
-        <% else %>  
+          <a>
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span><%= link_to "Become a Mentor", new_user_topic_path(current_user), class:"text-center"%></span>
+          </a>
+        <% else %>
           <a href="/users/sign_up"  >
           <i class="fa-solid fa-chalkboard-user"></i>
             <span class="text-center">Become a Mentor
