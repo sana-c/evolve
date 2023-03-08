@@ -24,7 +24,7 @@ body{
     margin-left: 20px;
   }
   .sidebar-container{
-    width:80px;
+    width:100px;
     min-height: 100vh;
   }
 }
@@ -69,4 +69,14 @@ body{
   color:black;
   font-size: 1.2em;
   padding: 2px;
+}
+
+.text-center{
+  color:rgb(163, 163, 163);
+  &:hover{
+    color: rgb(7, 7, 252);
+  }
+}
+#navbarDropdown{
+  height: 40px;
 }
