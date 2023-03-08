@@ -12,23 +12,23 @@ class TopicsController < ApplicationController
   end
 
   def new
-    @topic = Topic.new
     @user = current_user
+    @topic = Topic.new
   end
 
   def create
     @topic = Topic.new(topic_params)
     @topic.user = current_user
+
     if @topic.save
-    # No need for app/views/restaurants/create.html.erb
-      redirect_to topic_path(@topic)
+      redirect_to user_topic_path(@topic.user, @topic)
     else
-      render:new
+      render :new
     end
   end
 
   private
   def topic_params
-    params.require(:topic).permit(:title, :description, :pph)
+    params.require(:topic).permit(:title, :description, :pph, :category_id)
   end
 end
