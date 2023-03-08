@@ -1,6 +1,9 @@
 class TopicsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
+
   def index
     @topics = Topic.all
+    @prof_count = Topic.pluck(:user_id).uniq.count
   end
 
   def show
