@@ -13,3 +13,60 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body{
+  background-color: rgb(239, 234, 234);
+}
+.master-container{
+  display: flex;
+  .main-container{
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .sidebar-container{
+    width:80px;
+    min-height: 100vh;
+  }
+}
+#navbar {
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 20px auto 20px auto;
+      &:hover{
+        i{
+          color: rgb(7, 7, 252);
+        }
+        span{
+          color: rgb(7, 7, 252);
+        }
+      }
+    }
+  }
+  a{
+    display:flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  i{
+    font-size: 1.2em;
+    color: rgb(163, 163, 163);
+
+  }
+
+  span {
+    display: inline;
+    color: rgb(163, 163, 163);
+
+  }
+}
+.logo{
+  color:black;
+  font-size: 1.2em;
+  padding: 2px;
+}
