@@ -1,6 +1,14 @@
-IN DESCOVER
-<ul>
-  <% @categories.each do |restaurant| %>
-    <li><%= restaurant.name %></li>
-  <% end %>
-</ul>
+
+<div class="title"> <h1> Discover all the catagories</h1>
+</div>
+<div class="container">
+  <div class="cards-wrapper">
+    <div class="cards">
+      <% @categories.each do |category| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          <%= category.name %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
