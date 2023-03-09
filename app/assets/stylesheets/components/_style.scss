@@ -122,4 +122,24 @@ html, body {
 }
 .Categories{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:20px;
+  margin-bottom: 5px;
+
+  .cat{
+    background-color: #5379f7;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color:black;
+    border:none;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+      box-shadow: 5px;
+      background-color: #3f69f3;
+    }
+  }
 }
