@@ -12,7 +12,8 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
-    @user = User.find(params[:user_id])
+    @user = current_user
+    @reservation = Reservation.new
   end
 
   def new

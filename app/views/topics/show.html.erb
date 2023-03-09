@@ -39,15 +39,18 @@
           <h3 class="card-title">Mathematics</h3>
           <p class="card-description">trigonometry, calculus and statistics</p>
         </div>
-        <div class="buttons">
-          <button class="primary green">
-            Book
-          </button>
+
+        <div id='reservation-dates' data-controller="reservation" >
+          <%= simple_form_for([@topic, @reservation]) do |f| %>
+            <%= f.input :start, as: :string, label: "Dates", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
+            <%= f.input :end, as: :string, label: '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
+            <%= f.submit "book", class: "primary green" %>
+          <% end %>
         </div>
       </div>
     </div>
 
-    
+
 
 
 
