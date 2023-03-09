@@ -32,6 +32,7 @@ class TopicsController < ApplicationController
   end
 
   private
+  
   def topic_params
     params.require(:topic).permit(:title, :description, :pph, :category_id)
   end
