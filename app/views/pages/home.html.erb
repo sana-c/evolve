@@ -6,10 +6,14 @@
       <p class="content-title">C.</p>
       <p class="content-description">Find out what topics you fin interesting.<br/>Learn a new skill & connect with people that are passionate about similar topics.</p>
 			<section id="explore">
-       <div class="input-group">
-          <input type="search" class="form-control rounded p-3" placeholder="What do you want to learn?" aria-label="Search" aria-describedby="search-addon" />
-          <button type="button" class="btn btn-outline-primary p-3">search</button>
-        </div>
+        <%= form_with url: topics_path, method: :get, class: "input-group" do %>
+          <%= text_field_tag :q,
+            params[:q],
+            class: "form-control rounded p-3",
+            placeholder: "What do you want to learn?"
+          %>
+          <%= submit_tag "Search", class: "btn btn-outline-primary p-3" %>
+        <% end %>
       </section>
   </div>
   <div class="right-div">
@@ -23,4 +27,3 @@
     right:20px; font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
           font-size: 12px; font-weight:300; color:#6e8786">Created by Cole Gwoz</p>
-

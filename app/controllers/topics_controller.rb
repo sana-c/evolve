@@ -2,13 +2,19 @@ class TopicsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    @topics = Topic.all
+
     @prof_count = Topic.pluck(:user_id).uniq.count
+    if params[:q].present?
+      @topics = Topic.where("LOWER(title) LIKE ?", "%" + params[:q].downcase + "%")
+    else
+      @topics = Topic.all
+    end
+
   end
 
   def show
     @topic = Topic.find(params[:id])
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 
   def new
@@ -21,7 +27,7 @@ class TopicsController < ApplicationController
     @topic.user = current_user
 
     if @topic.save
-      redirect_to user_topic_path(@topic.user, @topic)
+      redirect_to user_topic_path(current_user, @topic)
     else
       render :new
     end

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     get '/categories', to: 'categories#show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  
+
+
+  get "/discover", to: "pages#discover", as: "discover"
 end
