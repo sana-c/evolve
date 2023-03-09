@@ -26,7 +26,7 @@
         <li >
           <a href="#"  >
             <i class="fa-solid fa-house-user"></i>
-            <span>Home</span>
+            <span><%= link_to "Home", discover_path, class:"text-center"%></span>
           </a>
         </li>
 
@@ -43,7 +43,7 @@
             <span><%= link_to "Become a Mentor", new_user_topic_path(current_user), class:"text-center"%></span>
           </a>
         <% else %>
-          <a href="/users/sign_up"  >
+          <a href="/users/sign_in" >
           <i class="fa-solid fa-chalkboard-user"></i>
             <span class="text-center">Become a Mentor
             </span>

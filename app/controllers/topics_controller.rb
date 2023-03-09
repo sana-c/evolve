@@ -14,7 +14,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 
   def new
@@ -27,7 +27,7 @@ class TopicsController < ApplicationController
     @topic.user = current_user
 
     if @topic.save
-      redirect_to user_topic_path(@topic.user, @topic)
+      redirect_to user_topic_path(current_user, @topic)
     else
       render :new
     end
