@@ -55,7 +55,8 @@ html, body {
   top:0;
   bottom: 0;
   left: 0;
-  margin: auto;}
+  margin: auto
+  ;}
 
 .right-div {
   width:540px;
@@ -118,4 +119,7 @@ html, body {
   padding:12px 12px 12px 12px;
   margin-left:28px;
   border-radius: 15px;
+}
+.Categories{
+  display: flex;
 }
