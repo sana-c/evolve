@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+  get 'categories/show'
   devise_for :users
   resources :users do 
     resources :topics, only: [:index, :show, :create, :new] 
