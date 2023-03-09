@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
-  categories = [mathematics, physics, chemistry, biology, economics, law, languages, sports]
-  def index
+   def index
     @categories = Categories.all
   end
 
