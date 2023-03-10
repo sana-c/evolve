@@ -13,6 +13,7 @@ class TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id])
     @user = current_user
+    @teacher = @topic.user
     @reservation = Reservation.new
   end
 
@@ -33,7 +34,7 @@ class TopicsController < ApplicationController
   end
 
   private
-  
+
   def topic_params
     params.require(:topic).permit(:title, :description, :pph, :category_id)
   end

@@ -1,16 +1,14 @@
 <div class="card-container">
-	<span class="pro">MENTOR</span>
-	<img class="round" src="https://randomuser.me/api/portraits/men/34.jpg" alt="user" />
-	<h3>Zakaria H.</h3>
-	<h6>Rabat</h6>
-	<p>User interface designer and <br/> front-end developer</p>
+    <%= cl_image_tag current_user.photo.key, class: "round" %>
+
+	<h3><%= @teacher.first_name %></h3>
+
+	<p><%= @topic.description %></p>
 	<div class="buttons">
 		<button class="primary">
-			100 mad/h
+			<%= @topic.pph %>
 		</button>
-		<button class="primary ghost">
-    Boonk an Online Course
-		</button>
+    <a href="#">Offers free video chat</a>
 	</div>
 	<div class="skills">
 		<h6>Tags</h6>
@@ -27,19 +25,26 @@
 </div>
 
 
- <div class="profile-projects">
-  <h2>Bart Veneman's projects</h2>
+ <div id="topics" class="profile-projects">
+ <div class="d-flex justify-content-around align-items-center flex-wrap">
+    <% @teacher.topics.each do |topic| %>
+      <%= link_to topic_path(topic) do %>
+        <div class="card">
+         <%# <div class="floating"> <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="sarah"> Sarah H.</div> %>
+          <div class="course-img" style="background-image: url('https://images.unsplash.com/file-1661973760703-91f50df21c28image?dpr=2&auto=format&fit=crop&w=416&q=60')"></div>
+          <div class="d-flex flex-column justify-content-center align-items-start">
+            <h3><%= topic.user.first_name %></h3>
+            <p> <%= topic.title %></p>
+            <div class="d-flex justify-content-around align-items-center w-100 py-2" >
 
-    <div class="project-card">
-      <div class="card-image">
-        <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="User Image">
-      </div>
-      <div class="card-content">
-        <div class="card-text">
-          <h3 class="card-title">Mathematics</h3>
-          <p class="card-description">trigonometry, calculus and statistics</p>
+              <div> <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>  </div>
+              <div> <span class="price"><%= topic.pph %> MAD</span> </div>
+            </div>
+          </div>
         </div>
-
+      <% end %>
+    <% end %>
+  </div>
         <div id='reservation-dates' data-controller="reservation" >
           <%= simple_form_for([@topic, @reservation]) do |f| %>
             <%= f.input :start, as: :string, label: "Dates", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
@@ -47,16 +52,4 @@
             <%= f.submit "book", class: "primary green" %>
           <% end %>
         </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <!-- repeat the above HTML for each project card -->
-
-
-  </div>
-</div>
+ </div>

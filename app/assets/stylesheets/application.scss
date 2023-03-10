@@ -17,6 +17,11 @@
 body{
   background-color: rgb(239, 234, 234);
 }
+a{
+  text-decoration: none !important;
+  color:black !important;
+}
+
 .master-container{
   display: flex;
   .main-container{
