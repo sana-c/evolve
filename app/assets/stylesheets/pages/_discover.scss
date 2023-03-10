@@ -44,3 +44,13 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+.discover{
+  margin: 4px;
+  transition: 0.5s all ease-in-out;
+  border-radius: 6px;
+  border:none;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
