@@ -8,6 +8,7 @@
   overflow-x: auto;
   width: 100%;
   background-color: white;
+  padding: 24px;
 }
 
 .cards {
@@ -17,10 +18,17 @@
 }
 
 .card-category {
+  &:hover {
+    transform: scale(1.2);
+    color: rgb(220, 232, 245);
+    font-weight: bold;
+  }
+  transition: 0.5s all ease-in-out;
   height: 80px;
-  width: 150px;
+  min-width : 160px;
+  width: 10050px;
   color: white;
-  font-size: 24px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +39,7 @@
   cursor: pointer;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
   margin-right: 10px;
-  font-weight: bold;
+  font-weight: 300;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
