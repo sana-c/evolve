@@ -11,10 +11,11 @@
 
         <% if user_signed_in? %>
           <li>
-           <a href="#">
-            <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <span>Profile</span>
-          </a>
+            <%= link_to user_path(current_user) do %>
+              <!--<a href="/topic/params[:id]">-->
+              <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+              <span>Profile</span>
+            <% end %>
           </li>
 
         <% else %>
