@@ -1,6 +1,6 @@
 
 <div class="card-container">
-  
+
 <div class="row no-gutters">
 
   <div xs= "12" class="pr-lg-4 col-lg-8">
@@ -93,8 +93,8 @@
         </div>
       <% end %>
     <% end %>
-  </div>
-
+</div>
+<br>
 <div class="skills">
 		<h6>Tags</h6>
 		<ul>
@@ -110,3 +110,22 @@
 
 </div>
 
+<div class="d-flex justify-content-between">
+  <div class="m-5">
+    <%= simple_form_for [@topic, @review] do |f| %>
+      <strong><%= f.input :rating %></strong>
+       <strong><%= f.input :content %></strong>
+      <%= f.submit "Create review", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+  <div class="m-5">
+    <% if @topic.reviews.blank? %>
+      Be the first to leave a review for <%= @topic.title %>
+    <% else %>
+      <% @topic.reviews.each do |review| %>
+        <p><i class="fa-regular fa-star"></i> <%= review.rating %></p>
+        <p><%= review.content %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
