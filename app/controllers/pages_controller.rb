@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def discover
+    # @category.topics = @topics
     if params[:q].present?
       @topics = Topic.where("LOWER(title) LIKE ?", "%" + params[:q].downcase + "%")
     else
