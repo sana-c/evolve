@@ -1,16 +1,101 @@
+
 <div class="card-container">
-    <%= cl_image_tag current_user.photo.key, class: "round" %>
+  
+<div class="row no-gutters">
 
-	<h3><%= @teacher.first_name %></h3>
+  <div xs= "12" class="pr-lg-4 col-lg-8">
+    <div class="card-container">
+        <%= cl_image_tag current_user.photo.key, class: "round" %>
 
-	<p><%= @topic.description %></p>
-	<div class="buttons">
-		<button class="primary">
-			<%= @topic.pph %>
-		</button>
-    <a href="#">Offers free video chat</a>
-	</div>
-	<div class="skills">
+      <h3><%= @teacher.first_name %></h3>
+
+      <p><%= @topic.description %></p>
+      <div class="buttons">
+        <button class="primary">
+          <%= @topic.pph %>
+        </button>
+        <a href="#">Offers free video chat</a>
+      </div>
+      <div class="skills">
+        <h6>Tags</h6>
+        <ul>
+          <li>UI / UX</li>
+          <li>Front End Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none d-lg-block pl-lg-4 col-lg-4">
+    <div class="sticky-top sticky-widget pt-7 is-sticky">
+      <div class="card-widget h-100 d-flex flex-column">
+        <!-- top -->
+        <!-- <div class="d-none d-lg-flex align-items-baseline justify-content-between">
+          <div>
+            <span class="h3">320 MAD</span>
+            <span>per hour</span>
+          </div>
+          <div>
+            <span class="font-weight-semi-bold">5.0</span>
+            <span class="font-size-sm">(47)</span>
+          </div>
+        </div> -->
+        <!-- in person or online-->
+        <div class="mt-5 mb-3">
+          <input data-testid="online-radio-button" type="radio" class="custom-control-input" value="online" name="__BVID__2151" id="__BVID__2153">
+          <label class="custom-control-label" for="__BVID__2153">In person</label>
+          <input data-testid="online-radio-button" type="radio" class="custom-control-input" value="online" name="__BVID__2151" id="__BVID__2153">
+          <label class="custom-control-label" for="__BVID__2153">Online</label>
+        </div>
+        <!--calendar-->
+        <span class="h-100">
+          <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
+            <%= simple_form_for([@topic, @reservation]) do |f| %>
+              <%= f.input :start, as: :string, label: "Date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
+              <%= f.input :end, as: :string, label: '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
+
+              <button data-testid="primary-action-button" variant="primary" block size="lg" class="btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse">
+                <%= f.submit "book lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse" %>
+              </button>
+            <% end %>
+          </div> <!-- reservation/calendar-->
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div id="topics" class="profile-projects">
+  <div class="d-flex justify-content-around align-items-center flex-wrap">
+    <% @teacher.topics.each do |topic| %>
+      <%= link_to topic_path(topic) do %>
+        <div class="card">
+         <%# <div class="floating"> <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="sarah"> Sarah H.</div> %>
+          <div class="course-img" style="background-image: url('https://images.unsplash.com/file-1661973760703-91f50df21c28image?dpr=2&auto=format&fit=crop&w=416&q=60')"></div>
+
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <h3><%= topic.user.first_name %></h3>
+              <p> <%= topic.title %></p>
+              <div class="d-flex justify-content-around align-items-center w-100 py-2" >
+
+                <div> <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>  </div>
+                <div> <span class="price"><%= topic.pph %> MAD</span> </div>
+              </div>
+
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+<div class="skills">
 		<h6>Tags</h6>
 		<ul>
 			<li>UI / UX</li>
@@ -22,34 +107,6 @@
 			<li>Node</li>
 		</ul>
 	</div>
+
 </div>
 
-
- <div id="topics" class="profile-projects">
- <div class="d-flex justify-content-around align-items-center flex-wrap">
-    <% @teacher.topics.each do |topic| %>
-      <%= link_to topic_path(topic) do %>
-        <div class="card">
-         <%# <div class="floating"> <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="sarah"> Sarah H.</div> %>
-          <div class="course-img" style="background-image: url('https://images.unsplash.com/file-1661973760703-91f50df21c28image?dpr=2&auto=format&fit=crop&w=416&q=60')"></div>
-          <div class="d-flex flex-column justify-content-center align-items-start">
-            <h3><%= topic.user.first_name %></h3>
-            <p> <%= topic.title %></p>
-            <div class="d-flex justify-content-around align-items-center w-100 py-2" >
-
-              <div> <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>  </div>
-              <div> <span class="price"><%= topic.pph %> MAD</span> </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-        <div id='reservation-dates' data-controller="reservation" >
-          <%= simple_form_for([@topic, @reservation]) do |f| %>
-            <%= f.input :start, as: :string, label: "Dates", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
-            <%= f.input :end, as: :string, label: '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
-            <%= f.submit "book", class: "primary green" %>
-          <% end %>
-        </div>
- </div>

@@ -6,7 +6,7 @@
   <div class="form-inputs">
     <%= f.input :first_name %>
     <%= f.input :last_name %>
-    <%= f.input :DOB, label: "Date of birth"%>
+    <%= f.input :DOB, label: "Date of birth", start_year: Date.today.year - 70, end_year: Date.today.year - 18 %>
     <%= f.input :photo, as: :file , input_html: { multiple: false } %>
     <%= f.input :email,
                 required: true,
