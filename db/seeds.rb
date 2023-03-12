@@ -7,8 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Topic.destroy_all
-User.destroy_all
 Category.destroy_all
+User.destroy_all
 
 20.times do
   usern = User.create!(
