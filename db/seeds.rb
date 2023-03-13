@@ -13,7 +13,7 @@ Category.destroy_all
 20.times do
   usern = User.create!(
     email: Faker::Internet.email,
-    password: Faker::Internet.password,
+    password: "123456",
     first_name: Faker::FunnyName.two_word_name
   )
   categoryn = Category.create!(
