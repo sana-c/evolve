@@ -60,7 +60,7 @@ html, body {
 .right-div {
   width:540px;
   height:550px;
-  background-image:url(https://png.pngtree.com/png-vector/20210718/ourlarge/pngtree-e-learning-education-online-illustration-png-image_3616764.jpg);
+  background-image:url(https://www.signupgenius.com/cms/socialMediaImages/tips-for-teaching-online-lessons-1260x630.jpg);
   transform:scaleX(-1);
   background-position: -170px 0px;
   background-size:cover;
@@ -114,7 +114,7 @@ html, body {
   background-color:transparent;
   border:none;
   cursor:pointer;
-  background-color:rgb(66, 130, 249);
+  background-color: #e9b273;
   padding:12px 12px 12px 12px;
   margin-left:28px;
   border-radius: 15px;
@@ -125,11 +125,13 @@ html, body {
   justify-content: space-between;
   margin-top:20px;
   margin-bottom: 5px;
+  width: 80vw;
+  padding-left: 100px;
 
   .cat{
-    background-color: #5379f7;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/323/639/small/luxury-beige-background-free-vector.jpg);
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 15px 20px;
     color:black;
     border:none;
     margin-bottom: 5px;
@@ -138,7 +140,7 @@ html, body {
       cursor: pointer;
       transform: scale(1.2);
       box-shadow: 5px;
-      background-color: #3f69f3;
+
     }
   }
 }
@@ -153,13 +155,16 @@ html, body {
 }
 
 .styling{
-  width:80vh;
-  padding: 40px;
+  width:90vh;
+  padding: 50px;
   button{
     border:none;
     padding: 7px;
     border-radius: 7px;
-    background-color: #717bd5;
-    color:white;
+    background-color: #e9b273;
+    color:black;
   }
+}
+.title{
+  padding-left:100px;
 }
