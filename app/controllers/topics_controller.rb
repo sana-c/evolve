@@ -15,7 +15,11 @@ class TopicsController < ApplicationController
     @user = current_user
     @teacher = @topic.user
     @reservation = Reservation.new
+
+    @category = @topic.category
+
     @review = Review.new 
+
   end
 
   def new
@@ -37,6 +41,6 @@ class TopicsController < ApplicationController
   private
 
   def topic_params
-    params.require(:topic).permit(:title, :description, :pph, :category_id)
+    params.require(:topic).permit(:title, :description, :pph, :category_id, :photo)
   end
 end
