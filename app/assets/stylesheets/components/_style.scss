@@ -35,7 +35,7 @@ html, body {
 .container {
   width: 900px;
   height: 550px;
-  position: absolute;
+  position: relative;
   perspective: 800px;
 	margin: 20px auto;
   top:0;
@@ -140,5 +140,26 @@ html, body {
       box-shadow: 5px;
       background-color: #3f69f3;
     }
+  }
+}
+
+.teacher {
+  border: none;
+  border-radius: 24px;
+  height: 70vh;
+  margin: 24px auto;
+  width: 80vw;
+  background-size: cover;
+}
+
+.styling{
+  width:80vh;
+  padding: 40px;
+  button{
+    border:none;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #717bd5;
+    color:white;
   }
 }
