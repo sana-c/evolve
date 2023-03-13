@@ -1,0 +1,13 @@
+
+
+<h1>All lessons reservations</h1>
+<br>
+<% @reservations.each do |r| %>
+  <hr>
+
+  <div><%= User.find(r.topic.user_id).first_name %></div>
+  <div><%= r.topic.title %></div>
+  <div><%= r.start %></div>
+  <div><%= r.end %></div>
+<% end %>
+<br>
