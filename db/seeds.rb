@@ -247,118 +247,118 @@ topic1 = Topic.create(
   topic7.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic7.save
 
-  Topic.create(
-  title: "Algebra",
-  description: "I have been tutoring math for over 25 years, I joined Broward College in 2005, the college where I earned my AA degree years before.
-  During my 18 years at Broward College, I earned 3 of the highest honors awarded to faculty.
-  - Professor of the Year (first-year teaching)
-  - Endowed Teaching Chair Award
-  - Last year’s Online Professor of the Year
-  I love teaching math and I want to continue inspiring young people.",
-  pph: 250,
-  user_id: user_7.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "Algorithms",
-  description:"I started my Ph.D. program in spring 2007 at Rensselaer Polytechnic Institute (RPI) and graduated in May 2011. My Ph.D. work involved the development and implementation of efficient algorithms to solve inverse problems in finite elasticity. Its application to nonlinear elasticity imaging of breast tumors has shown great potential to diagnose breast cancer non-invasively. I became a finalist for the $30,000 Lemelson-MIT-RPI Prize with his findings on breast cancer diagnosis using nonlinear elasticity imaging.",
-  pph: 300,
-  user_id: user_8.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "Geometry",
-  description:" am a private tutor that has been teaching and tutoring all subjects of math and science for 7 years. I like to think of myself as a personal trainer of academics. I graduated with a degree in 2013 from the University of California Berkeley, but I am going back to school right now at the University of Oregon. I hope to teach you that math and science can be fun, or at least to take the stress away from learning the subjects.",
-  pph: 300,
-  user_id: user_9.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "Calculus",
-  description:"I am an Engineer and giving mathematics and physics classes since 2015 with Fantastic 8 years. I have taught more than thousands students of different countries and they all are satisfied with my thorough knowledge, experience and deep explanation. All my students have passed with HIGHER GRADES in their courses after taking class.
-  I can assure you that learning math with me is going to be so much fun in a way that you will never get bored in my classes and will learn your subjects in a very active and friendly environment. You can definitely count on me. Please do feel free to get in touch with me today to show you how I can help you reach your academic goals.",
-  pph: 300,
-  user_id: user_11.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "Programming language",
-  description:"PhD student in Electrical Engineering and Computing at the University of Texas in San Antonio (USA), graduated in Software Engineering at the Federal University of Amazonas (BR), I have worked in companies and am currently in a research project involving Artificial Intelligence, Database and Scientific Method. I seek to teach students from basic to advanced level to program and analyze algorithms as software architects.",
-  pph: 300,
-  user_id: user_12.id,
-  category_id: category_3.id
-  )
-  Topic.create(
-  title: "Trigonometry",
-  description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
-  Besides loving math, teaching by itself is one of my greatest passions as it allows me to be a more critical thinker. It also allows me to form connections through mentoring, something that inspires me deeply.
-  Oh, and I'm also a jiu jitsu teacher and a professional athlete! :)",
-  pph: 300,
-  user_id: user_13.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "Trigonometry",
-  description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
-  Besides loving math, teaching by itself is one of my greatest passions as it allows me to be a more critical thinker. It also allows me to form connections through mentoring, something that inspires me deeply.
-  Oh, and I'm also a jiu jitsu teacher and a professional athlete! :)",
-  pph: 300,
+#   Topic.create(
+#   title: "Algebra",
+#   description: "I have been tutoring math for over 25 years, I joined Broward College in 2005, the college where I earned my AA degree years before.
+#   During my 18 years at Broward College, I earned 3 of the highest honors awarded to faculty.
+#   - Professor of the Year (first-year teaching)
+#   - Endowed Teaching Chair Award
+#   - Last year’s Online Professor of the Year
+#   I love teaching math and I want to continue inspiring young people.",
+#   pph: 250,
+#   user_id: user_7.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "Algorithms",
+#   description:"I started my Ph.D. program in spring 2007 at Rensselaer Polytechnic Institute (RPI) and graduated in May 2011. My Ph.D. work involved the development and implementation of efficient algorithms to solve inverse problems in finite elasticity. Its application to nonlinear elasticity imaging of breast tumors has shown great potential to diagnose breast cancer non-invasively. I became a finalist for the $30,000 Lemelson-MIT-RPI Prize with his findings on breast cancer diagnosis using nonlinear elasticity imaging.",
+#   pph: 300,
+#   user_id: user_8.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "Geometry",
+#   description:" am a private tutor that has been teaching and tutoring all subjects of math and science for 7 years. I like to think of myself as a personal trainer of academics. I graduated with a degree in 2013 from the University of California Berkeley, but I am going back to school right now at the University of Oregon. I hope to teach you that math and science can be fun, or at least to take the stress away from learning the subjects.",
+#   pph: 300,
+#   user_id: user_9.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "Calculus",
+#   description:"I am an Engineer and giving mathematics and physics classes since 2015 with Fantastic 8 years. I have taught more than thousands students of different countries and they all are satisfied with my thorough knowledge, experience and deep explanation. All my students have passed with HIGHER GRADES in their courses after taking class.
+#   I can assure you that learning math with me is going to be so much fun in a way that you will never get bored in my classes and will learn your subjects in a very active and friendly environment. You can definitely count on me. Please do feel free to get in touch with me today to show you how I can help you reach your academic goals.",
+#   pph: 300,
+#   user_id: user_11.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "Programming language",
+#   description:"PhD student in Electrical Engineering and Computing at the University of Texas in San Antonio (USA), graduated in Software Engineering at the Federal University of Amazonas (BR), I have worked in companies and am currently in a research project involving Artificial Intelligence, Database and Scientific Method. I seek to teach students from basic to advanced level to program and analyze algorithms as software architects.",
+#   pph: 300,
+#   user_id: user_12.id,
+#   category_id: category_3.id
+#   )
+#   Topic.create(
+#   title: "Trigonometry",
+#   description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
+#   Besides loving math, teaching by itself is one of my greatest passions as it allows me to be a more critical thinker. It also allows me to form connections through mentoring, something that inspires me deeply.
+#   Oh, and I'm also a jiu jitsu teacher and a professional athlete! :)",
+#   pph: 300,
+#   user_id: user_13.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "Trigonometry",
+#   description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
+#   Besides loving math, teaching by itself is one of my greatest passions as it allows me to be a more critical thinker. It also allows me to form connections through mentoring, something that inspires me deeply.
+#   Oh, and I'm also a jiu jitsu teacher and a professional athlete! :)",
+#   pph: 300,
 
-  user_id: user_13.id,
-  category_id: category_2.id
-  )
-  Topic.create(
-  title: "French",
-  description:"Are you struggling with pronunciation? grammar? reading and spelling? Producing speech, or overall comprehension? I am here to help you! I teach all levels, from beginners to bilinguals.
-I will help you improve and understand French pronunciation through targeted practice, reading, spelling, and grammar.
-I will help you with comprehension by studying different dialogues and producing speech with a mix of practice and guided conversation topics.
-Are you planning to travel? Helping with communication with real-life French documents as materials.",
-  pph: 300,
+#   user_id: user_13.id,
+#   category_id: category_2.id
+#   )
+#   Topic.create(
+#   title: "French",
+#   description:"Are you struggling with pronunciation? grammar? reading and spelling? Producing speech, or overall comprehension? I am here to help you! I teach all levels, from beginners to bilinguals.
+# I will help you improve and understand French pronunciation through targeted practice, reading, spelling, and grammar.
+# I will help you with comprehension by studying different dialogues and producing speech with a mix of practice and guided conversation topics.
+# Are you planning to travel? Helping with communication with real-life French documents as materials.",
+#   pph: 300,
 
-  user_id: user_26.id,
-  category_id: category_6.id
-  )
-  Topic.create(
-  title: "English",
-  description:"I’m a native English speaker that learned English at age 5. Spanish was my first language, since I was born in Bogotá Colombia and my family is from there, but now I speak English with an American English accent. I also try to keep my Spanish language alive by speaking it with friends and family.
+#   user_id: user_26.id,
+#   category_id: category_6.id
+#   )
+#   Topic.create(
+#   title: "English",
+#   description:"I’m a native English speaker that learned English at age 5. Spanish was my first language, since I was born in Bogotá Colombia and my family is from there, but now I speak English with an American English accent. I also try to keep my Spanish language alive by speaking it with friends and family.
 
-I have my TEFL/TESOL certification - teaching English as a foreign language or teaching English to speakers of other languages.",
-  pph: 300,
+# I have my TEFL/TESOL certification - teaching English as a foreign language or teaching English to speakers of other languages.",
+#   pph: 300,
 
-  user_id: user_16.id,
-  category_id: category_6.id
-  )
-  Topic.create(
-  title: "Arabic",
-  description:"Being with me in the class will help you reach your goal, whether you need the language for traveling of business or anything else related to the communication with other in Arabic, so you are in the right place, looking forward to see you in my sessions.",
-  pph: 300,
+#   user_id: user_16.id,
+#   category_id: category_6.id
+#   )
+#   Topic.create(
+#   title: "Arabic",
+#   description:"Being with me in the class will help you reach your goal, whether you need the language for traveling of business or anything else related to the communication with other in Arabic, so you are in the right place, looking forward to see you in my sessions.",
+#   pph: 300,
 
-  user_id: user_23.id,
-  category_id: category_6.id
-  )
-  Topic.create(
-  title: "Italian",
-  description:"I am a qualified teacher who specialized in Italian, Spanish, and English. I strongly believe in life-long learning, this is the reason why I keep investing in my education. In a world that is constantly changing, teachers must keep up to date with the latest teaching strategies, approaches, methods, and technologies to guarantee the best learning outcomes.",
-  pph: 300,
+#   user_id: user_23.id,
+#   category_id: category_6.id
+#   )
+#   Topic.create(
+#   title: "Italian",
+#   description:"I am a qualified teacher who specialized in Italian, Spanish, and English. I strongly believe in life-long learning, this is the reason why I keep investing in my education. In a world that is constantly changing, teachers must keep up to date with the latest teaching strategies, approaches, methods, and technologies to guarantee the best learning outcomes.",
+#   pph: 300,
 
-  user_id: user_17.id,
-  category_id: category_6.id
-  )
-  Topic.create(
-  title: "English",
-  description:"I hold a BA in Interpreting and Translation; an MA in Modern Languages for International Communication; an MA in Fashion Journalism; an Ma in Teaching Italian as a Second Language; a Máster en Formación del Profesorado de ESO y Bachillerato, FP y Enseñanza de Idiomas; and Qualified Teacher Status to teach English and Spanish as a Second Language. As a schoolteacher, I also have an enhanced DBS certificate. ",
-  pph: 250,
+#   user_id: user_17.id,
+#   category_id: category_6.id
+#   )
+#   Topic.create(
+#   title: "English",
+#   description:"I hold a BA in Interpreting and Translation; an MA in Modern Languages for International Communication; an MA in Fashion Journalism; an Ma in Teaching Italian as a Second Language; a Máster en Formación del Profesorado de ESO y Bachillerato, FP y Enseñanza de Idiomas; and Qualified Teacher Status to teach English and Spanish as a Second Language. As a schoolteacher, I also have an enhanced DBS certificate. ",
+#   pph: 250,
 
-  user_id: user_18.id,
-  category_id: category_6.id
-  )
-  Topic.create(
-  title: "Arabic",
-  description:"To reach success you do not necessarily have to study harder but maybe just smarter. That is what we will be trying to achieve during the session by following personalized learning plans that fit each student's needs.
-My motivation and positivity will also help you enjoy the sessions and will push you to give your best. Do not forget that I am a student just like you! I always face challenges during my learning journey, and I am confident that we share very similar struggles.
-I cannot wait to welcome you to my sessions where professionalism and respect are a golden rule!",
-  pph: 300,
-  user_id: user_25.id,
-  category_id: category_6.id
-  )
-p "Created #{Topic.count} topics"
+#   user_id: user_18.id,
+#   category_id: category_6.id
+#   )
+#   Topic.create(
+#   title: "Arabic",
+#   description:"To reach success you do not necessarily have to study harder but maybe just smarter. That is what we will be trying to achieve during the session by following personalized learning plans that fit each student's needs.
+# My motivation and positivity will also help you enjoy the sessions and will push you to give your best. Do not forget that I am a student just like you! I always face challenges during my learning journey, and I am confident that we share very similar struggles.
+# I cannot wait to welcome you to my sessions where professionalism and respect are a golden rule!",
+#   pph: 300,
+#   user_id: user_25.id,
+#   category_id: category_6.id
+#   )
+ p "Created #{Topic.count} topics"
