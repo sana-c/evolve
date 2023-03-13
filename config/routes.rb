@@ -18,8 +18,9 @@ Rails.application.routes.draw do
   resources :topics, only: [:index, :show] do
     resources :reviews, only: [:new, :create]
   end
+  
+  
   resources :reviews, only: [:destroy]
-  resources :topics, only: [:index]
 
   get '/categories', to: 'categories#index'
   get '/categories', to: 'categories#show'

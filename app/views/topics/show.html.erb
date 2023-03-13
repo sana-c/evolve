@@ -9,26 +9,14 @@
     <%if current_user%>
         <%= cl_image_tag current_user.photo.key, class: "round" %>
     <%end%>
-
       <h3><%= @teacher.first_name %></h3>
       <p><%= @topic.description %></p>
+
       <div class="buttons">
         <button class="primary">
           <%= @topic.pph %>
         </button>
         <a href="#">Offers free video chat</a>
-      </div>
-      <div class="skills">
-        <h6>Tags</h6>
-        <ul>
-          <li>UI / UX</li>
-          <li>Front End Development</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
-        </ul>
       </div>
     </div>
   </div>
@@ -111,8 +99,6 @@
 	</div>
 
 </div>
-
-
 <div class="d-flex justify-content-between">
   <div class="m-5">
     <%= simple_form_for [@topic, @review] do |f| %>
@@ -128,8 +114,8 @@
       <% @topic.reviews.each do |review| %>
         <p><i class="fa-regular fa-star"></i> <%= review.rating %></p>
         <p><%= review.content %></p>
+        <%= link_to "delete review", review_path(review), method: :delete, data: {"turbo-method": :delete, confirm: 'are you sure you want to delete this review?'}%>
       <% end %>
     <% end %>
   </div>
 </div>
-
