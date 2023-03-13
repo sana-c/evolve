@@ -5,8 +5,9 @@
 
   <div xs= "12" class="pr-lg-4 col-lg-8">
     <div class="card-container">
+    <%if current_user%>
         <%= cl_image_tag current_user.photo.key, class: "round" %>
-
+    <%end%>
       <h3><%= @teacher.first_name %></h3>
 
       <p><%= @topic.description %></p>
