@@ -1,7 +1,7 @@
 <div id="navbar">
   <div class="container-fluid">
 
-  <%= link_to "Ǝ𝕧𝕠𝕝𝕧𝔼", discover_path, class:"logo"%>
+  <%= link_to "Ǝ𝕧𝕠𝕝𝕧𝔼", root_path, class:"logo"%>
     <hr>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
         <li >
           <a href="#"  >
           <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Search</span>
+            <span><%= link_to "Search", root_path(current_user), class:"text-center"%></span>
           </a>
         </li>
         <li >
