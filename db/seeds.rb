@@ -13,47 +13,47 @@ User.destroy_all
 
 puts "creating user"
 
-user_1 = User.create!(first_name: "Mohammed H.", last_name:"fatah", DOB: "02-02-1987", email: "mohamed.fatah@gmail.com", password: "123456")
+user_1 = User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Mohammed H.", last_name:"fatah", DOB: "02-02-1987", email: "mohamed.fatah@gmail.com", password: "123456")
 
-user_2 = User.create!(first_name: "Sarah F.", last_name:"fatah", DOB: "02-02-1987", email: "Sarah.fatah@gmail.com", password: "123456")
+user_2 = User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Sarah F.", last_name:"fatah", DOB: "02-02-1987", email: "Sarah.fatah@gmail.com", password: "123456")
 
-user_3 =User.create!(first_name: "Sanaa S.", last_name:"fatah", DOB: "02-02-1987", email: "Sanaa.fatah@gmail.com", password: "123456")
+user_3 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Sanaa S.", last_name:"fatah", DOB: "02-02-1987", email: "Sanaa.fatah@gmail.com", password: "123456")
 
-user_4 =User.create!(first_name: "Omar G.", last_name:"fatah", DOB: "02-02-1987", email: "Omar.fatah@gmail.com", password: "123456")
+user_4 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Omar G.", last_name:"fatah", DOB: "02-02-1987", email: "Omar.fatah@gmail.com", password: "123456")
 
-user_5 =User.create!(first_name: "Ghizlane A.", last_name:"fatah", DOB: "02-02-1987", email: "Ghizlane.fatah@gmail.com", password: "123456")
+user_5 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Ghizlane A.", last_name:"fatah", DOB: "02-02-1987", email: "Ghizlane.fatah@gmail.com", password: "123456")
 
-user_6 =User.create!(first_name: "Afafe S.", last_name:"fatah", DOB: "02-02-1987", email: "Afafe.fatah@gmail.com", password: "123456")
+user_6 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Afafe S.", last_name:"fatah", DOB: "02-02-1987", email: "Afafe.fatah@gmail.com", password: "123456")
 
-user_7 =User.create!(first_name: "Aimane K.", last_name:"fatah", DOB: "02-02-1987", email: "Aimane.fatah@gmail.com", password: "123456")
+user_7 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Aimane K.", last_name:"fatah", DOB: "02-02-1987", email: "Aimane.fatah@gmail.com", password: "123456")
 
-user_8 =User.create!(first_name: "Zakaria K.", last_name:"fatah", DOB: "02-02-1987", email: "Zakaria.fatah@gmail.com", password: "123456")
+user_8 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Zakaria K.", last_name:"fatah", DOB: "02-02-1987", email: "Zakaria.fatah@gmail.com", password: "123456")
 
-user_9 =User.create!(first_name: "Abderrahmane I.", last_name:"fatah", DOB: "02-02-1987", email: "Abderrahmane.fatah@gmail.com", password: "123456")
+user_9 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Abderrahmane I.", last_name:"fatah", DOB: "02-02-1987", email: "Abderrahmane.fatah@gmail.com", password: "123456")
 
-user_10 =User.create!(first_name: "Amine L.", last_name:"fatah", DOB: "02-02-1987", email: "Amine.fatah@gmail.com", password: "123456")
+user_10 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Amine L.", last_name:"fatah", DOB: "02-02-1987", email: "Amine.fatah@gmail.com", password: "123456")
 
-user_11 =User.create!(first_name: "Marco G.", last_name:"fatah", DOB: "02-02-1987", email: "Marco.fatah@gmail.com", password: "123456")
+user_11 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Marco G.", last_name:"fatah", DOB: "02-02-1987", email: "Marco.fatah@gmail.com", password: "123456")
 
-user_12 =User.create!(first_name: "Emma V.", last_name:"fatah", DOB: "02-02-1987", email: "Emma.fatah@gmail.com", password: "123456")
+user_12 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Emma V.", last_name:"fatah", DOB: "02-02-1987", email: "Emma.fatah@gmail.com", password: "123456")
 
-user_13 =User.create!(first_name: "Hamza H.", last_name:"fatah", DOB: "02-02-1987", email: "Hamza.fatah@gmail.com", password: "123456")
+user_13 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Hamza H.", last_name:"fatah", DOB: "02-02-1987", email: "Hamza.fatah@gmail.com", password: "123456")
 
-user_14 =User.create!(first_name: "Emilie R.", last_name:"fatah", DOB: "02-02-1987", email: "emilie.fatah@gmail.com", password: "123456")
-user_15 =User.create!(first_name: "David C.", last_name:"fatah", DOB: "02-02-1987", email: "David.fatah@gmail.com", password: "123456")
+user_14 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Emilie R.", last_name:"fatah", DOB: "02-02-1987", email: "emilie.fatah@gmail.com", password: "123456")
+user_15 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "David C.", last_name:"fatah", DOB: "02-02-1987", email: "David.fatah@gmail.com", password: "123456")
 
-user_16 =User.create!(first_name: "Glenna D.", last_name:"fatah", DOB: "02-02-1987", email: "Glenna.fatah@gmail.com", password: "123456")
-user_17 =User.create!(first_name: "Soundouss N.", last_name:"fatah", DOB: "02-02-1987", email: "Soundouss.fatah@gmail.com", password: "123456")
-user_18 =User.create!(first_name: "Marwane R.", last_name:"fatah", DOB: "02-02-1987", email: "Marwane.fatah@gmail.com", password: "123456")
-user_19 =User.create!(first_name: "Asmaa R.", last_name:"fatah", DOB: "02-02-1987", email: "Asmaa.fatah@gmail.com", password: "123456")
+user_16 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Glenna D.", last_name:"fatah", DOB: "02-02-1987", email: "Glenna.fatah@gmail.com", password: "123456")
+user_17 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Soundouss N.", last_name:"fatah", DOB: "02-02-1987", email: "Soundouss.fatah@gmail.com", password: "123456")
+user_18 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Marwane R.", last_name:"fatah", DOB: "02-02-1987", email: "Marwane.fatah@gmail.com", password: "123456")
+user_19 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Asmaa R.", last_name:"fatah", DOB: "02-02-1987", email: "Asmaa.fatah@gmail.com", password: "123456")
 
-user_20 =User.create!(first_name: "Bouchra J.", last_name:"fatah", DOB: "02-02-1987", email: "bouchra.fatah@gmail.com", password: "123456")
-user_21 =User.create!(first_name: "Salim C.", last_name:"fatah", DOB: "02-02-1987", email: "salim.fatah@gmail.com", password: "123456")
-user_22 =User.create!(first_name: "Eric D.", last_name:"fatah", DOB: "02-02-1987", email: "eric.fatah@gmail.com", password: "123456")
-user_23 =User.create!(first_name: "Ahmad M.", last_name:"fatah", DOB: "02-02-1987", email: "ahmad.fatah@gmail.com", password: "123456")
-user_24 =User.create!(first_name: "Alexis C.", last_name:"fatah", DOB: "02-02-1987", email: "Alexis.fatah@gmail.com", password: "123456")
-user_25 =User.create!(first_name: "Hanaa C.", last_name:"fatah", DOB: "02-02-1987", email: "Hanaa.fatah@gmail.com", password: "123456")
-user_26 =User.create!(first_name: "Charlotte D.", last_name:"fatah", DOB: "02-02-1987", email: "charlotte.fatah@gmail.com", password: "123456")
+user_20 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Bouchra J.", last_name:"fatah", DOB: "02-02-1987", email: "bouchra.fatah@gmail.com", password: "123456")
+user_21 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Salim C.", last_name:"fatah", DOB: "02-02-1987", email: "salim.fatah@gmail.com", password: "123456")
+user_22 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Eric D.", last_name:"fatah", DOB: "02-02-1987", email: "eric.fatah@gmail.com", password: "123456")
+user_23 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Ahmad M.", last_name:"fatah", DOB: "02-02-1987", email: "ahmad.fatah@gmail.com", password: "123456")
+user_24 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Alexis C.", last_name:"fatah", DOB: "02-02-1987", email: "Alexis.fatah@gmail.com", password: "123456")
+user_25 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Hanaa C.", last_name:"fatah", DOB: "02-02-1987", email: "Hanaa.fatah@gmail.com", password: "123456")
+user_26 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Charlotte D.", last_name:"fatah", DOB: "02-02-1987", email: "charlotte.fatah@gmail.com", password: "123456")
 
 images = [
           "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMj A3fDB8MHxzZWFyY2h8NHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
