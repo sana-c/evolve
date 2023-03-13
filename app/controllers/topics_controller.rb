@@ -15,7 +15,11 @@ class TopicsController < ApplicationController
     @user = current_user
     @teacher = @topic.user
     @reservation = Reservation.new
+
     @category = @topic.category
+
+    @review = Review.new 
+
   end
 
   def new

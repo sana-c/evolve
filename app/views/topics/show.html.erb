@@ -7,6 +7,7 @@
     <div class="card-container">
 
         <%= cl_image_tag @teacher.photo.key, class: "round" %>
+
       <h3><%= @teacher.first_name %></h3>
       <p><%= @topic.description %></p>
 
@@ -93,8 +94,8 @@
         </div>
       <% end %>
     <% end %>
-  </div>
-
+</div>
+<br>
 <div class="skills">
 		<h6>Tags</h6>
 		<ul>
@@ -108,4 +109,24 @@
 		</ul>
 	</div>
 
+</div>
+<div class="d-flex justify-content-between">
+  <div class="m-5">
+    <%= simple_form_for [@topic, @review] do |f| %>
+      <strong><%= f.input :rating %></strong>
+       <strong><%= f.input :content %></strong>
+      <%= f.submit "Create review", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+  <div class="m-5">
+    <% if @topic.reviews.blank? %>
+      Be the first to leave a review for <%= @topic.title %>
+    <% else %>
+      <% @topic.reviews.each do |review| %>
+        <p><i class="fa-regular fa-star"></i> <%= review.rating %></p>
+        <p><%= review.content %></p>
+        <%= link_to "delete review", review_path(review), method: :delete, data: {"turbo-method": :delete, confirm: 'are you sure you want to delete this review?'}%>
+      <% end %>
+    <% end %>
+  </div>
 </div>
