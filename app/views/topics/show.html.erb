@@ -9,12 +9,9 @@
     <%if current_user%>
         <%= cl_image_tag current_user.photo.key, class: "round" %>
     <%end%>
-
-
-        <%= cl_image_tag current_user.photo.key, class: "round" %>
       <h3><%= @teacher.first_name %></h3>
       <p><%= @topic.description %></p>
-      
+
       <div class="buttons">
         <button class="primary">
           <%= @topic.pph %>
@@ -122,8 +119,3 @@
     <% end %>
   </div>
 </div>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master

@@ -26,14 +26,18 @@ a{
   display: flex;
   .main-container{
     flex-grow: 1;
-    margin-left: 20px;
+    margin-left: 100px;
+
   }
   .sidebar-container{
     width:100px;
     min-height: 100vh;
+    position : fixed;
+    background-color: white;
   }
 }
 #navbar {
+
   ul{
     list-style: none;
     margin: 0;
