@@ -89,3 +89,15 @@ a{
 #navbarDropdown{
   height: 40px;
 }
+
+.newtopic {
+  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

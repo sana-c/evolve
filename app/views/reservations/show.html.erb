@@ -1,1 +1,10 @@
-Reservation History
+  <hr>
+
+  <div><%= @teacher.first_name %></div>
+  <div><%= @student.first_name %></div>
+  <div><%= @topic.title %></div>
+  <div><%= @reservation.start %></div>
+  <div><%= @reservation.end %></div>
+
+<hr>
+<%= link_to 'Back to all your reservations',  reservations_path %>

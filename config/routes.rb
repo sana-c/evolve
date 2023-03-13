@@ -10,10 +10,16 @@ Rails.application.routes.draw do
 
   resources :topics do
     resources :reservations, only: [:create, :new]
+  end
+
+  resources :reservations, only: [:show, :index]
+
+
+  resources :topics, only: [:index, :show] do
     resources :reviews, only: [:new, :create]
   end
   
-  resources :reservations, only: [:show]
+  
   resources :reviews, only: [:destroy]
 
   get '/categories', to: 'categories#index'
