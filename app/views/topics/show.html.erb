@@ -85,6 +85,7 @@
                 <div> <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>
                 </div>
                 <div> <span class="price"><%= topic.pph %> MAD</span> </div>
+                <%= link_to "delete topic", topic_path(@topic), method: :delete, data: {"turbo-method": :delete, confirm: 'are you sure you want to delete this topic?'}%>
               </div>
             </div>
 
