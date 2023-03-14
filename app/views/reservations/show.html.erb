@@ -1,10 +1,53 @@
-  <hr>
+<div class="container">
 
-  <div><%= @teacher.first_name %></div>
-  <div><%= @student.first_name %></div>
-  <div><%= @topic.title %></div>
-  <div><%= @reservation.start %></div>
-  <div><%= @reservation.end %></div>
+      <br>
+      <br>
 
-<hr>
-<%= link_to 'Back to all your reservations',  reservations_path %>
+      <div><h1><%= @topic.title %></h1></div>
+      <br>
+      <br>
+      <h2>Programmez</h2>
+      <div><h3>votre premier cours avec <%= @teacher.first_name %></h3></div>
+
+      <br>
+      <br>
+
+      <!--<div><%= @student.first_name %></div>-->
+      <div><%= @reservation.start %></div>
+      <div><%= @reservation.end %></div>
+
+
+      <br>
+      <br>
+      <h3 class="MER_mt30 nomb">Les coordonnées pour vous contacter</h3>
+      <p class="MER_text15 nomt">Elles ne sont communiquées qu'aux professeurs que vous sélectionnez</p>
+
+
+      <div class="input-wrapper">
+        <p>adresse</p>
+        <input type="text" name="register[address]" class="MER_input MER_input-less js-gmap-autocomplete pac-target-input" class="Votre adresse postale" data-country-code= '["FR","GP","MQ","MC","RE"]' value="37000" id= "input-autocomplete-address" autocomplete= "off">
+      </div>
+      <br>
+      <div class="input-wrapper">
+        <p>Numéro de téléphone</p>
+        <input type="text" name="register[address]" class="MER_input MER_input-less js-gmap-autocomplete pac-target-input" class="Votre adresse postale" data-country-code= '["FR","GP","MQ","MC","RE"]' value="+33 68 79 35 45 " id= "input-autocomplete-address" autocomplete= "off">
+      </div>
+
+
+
+    <hr>
+    <h3 class="MER_mt30 MER_step1lasth3"> Votre message</h3>
+    <textarea class="MER_textarea auto-resize" name="presentation" placeholder="Dites-en un peu plus à Houssem sur votre recherche de cours, vos disponibilités... Plus vous donnerez d'informations à votre professeur, plus il sera en mesure d'accepter votre demande." cols="80" rows="7">
+      Bonjour Houssem,
+      Je m’appelle English et je cherche un professeur de Maths.
+      Je souhaiterais prendre les cours chez vous ou chez moi.
+      Idéalement, j’aimerais débuter les cours au plus tôt.
+      Est ce que cela vous irait ? Pouvez-vous prendre contact avec moi afin que l’on en parle ?
+      Je vous souhaite une excellente journée,
+      A bientôt, English
+    </textarea>
+
+    <button type="submit" name="valide" class="valid_button_stripe button button-radius MER_submitbutton MER_step2button-mobile button-new-design"> Envoyer la demande </button>
+    <button type="submit" name="valide" class="valid_button_stripe button button-radius MER_submitbutton MER_step2button-mobile button-new-design"> <%= link_to 'Back to all your reservations',  reservations_path %> </button>
+
+</div>
