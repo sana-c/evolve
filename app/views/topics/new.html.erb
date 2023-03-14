@@ -1,15 +1,12 @@
 
-<h1>Please add a New Topic </h1>
-<%= simple_form_for [@user, @topic] do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description, :as => :text, :input_html => { :rows => 5 , :style => 'width: 95%'} %>
-  <%= f.input :pph %>
-  <%= f.input :photo, as: :file , input_html: { multiple: false } %>
-  <%= f.association :category  %>
-  <%= f.submit "Create the topic", class: "btn btn-primary" %>
-<% end %>
-
-<div class="newtopic"
- style="background-image:url('<%= image_path("a.jpg") %>')">
+<div class="container newtopic"  style="background-image:url('<%= image_path("a.jpg") %>')">
+  <h1>Please add a New Topic </h1>
+  <%= simple_form_for [@user, @topic] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description, :as => :text, :input_html => { :rows => 5 , :style => 'width: 95%'} %>
+    <%= f.input :pph %>
+    <%= f.input :photo, as: :file , input_html: { multiple: false } %>
+    <%= f.association :category  %>
+    <%= f.submit "Create the topic", class: "btn btn-primary" %>
+  <% end %>
 </div>
-

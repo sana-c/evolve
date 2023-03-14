@@ -63,9 +63,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_08_121052) do
     t.integer "rating"
     t.string "content"
     t.bigint "topic_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["topic_id"], name: "index_reviews_on_topic_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "tags", force: :cascade do |t|
@@ -117,6 +119,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_08_121052) do
   add_foreign_key "reservations", "topics"
   add_foreign_key "reservations", "users"
   add_foreign_key "reviews", "topics"
+  add_foreign_key "reviews", "users"
   add_foreign_key "topic_tags", "tags"
   add_foreign_key "topic_tags", "topics"
   add_foreign_key "topics", "categories"
