@@ -5,21 +5,21 @@
 
     font-family: 'Ubuntu', sans-serif !important;
     margin-top: 32px;
-    width: 246px;
-    height: 290px;
+    width: 290px;
+    height: 304px;
     border: 1px solid rgb(246, 245, 245);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     h3{
       margin-top: 10px;
       font-family: 'Ubuntu', sans-serif !important;
-      font-size: 18px;
+      font-size: 20px;
       padding-left: 16px;
     }
     p{
       margin-top: 10px;
       font-family: 'Ubuntu', sans-serif !important;
-      font-size: 13px;
+      font-size: 16px;
       padding-left: 16px;
     }
     i{
@@ -32,43 +32,64 @@
   .course-img{
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: auto;
     background-repeat: none;
     border-radius: 16px;
-    margin: 8px;
+    margin: 5px;
+    min-height: 150px;
     max-height: 280px;
-    max-width: 230px;
+    max-width: 280px;
   }
   .price {
     border-radius: 8px;
-    background-color: #2e8dff;
     padding: 4px 12px;
     margin-bottom: 4px;
-    color: white;
+    color: #8340dd;
     font-weight: bolder;
   }
   .floating{
-    background-color: rgba(255, 255, 255, 0.9);
-    top: 163px;
-    left: 23px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 140px;
+    left: 19px;
     border-radius: 16px;
     position: absolute;
-    width: 160px;
-    height: 48px;
+    width: 250px;
     display: flex;
+    height: 62px;
+    border-radius: 60px;
     justify-content: start;
-    align-items: center;
-    img {
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      margin: 0 12px;
+      align-items: center;
+
+    .img-floating{
+
+
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin: 0 12px;
     }
+
   }
   .final-div{
     margin: 4px;
   }
+  h6 {
+      color:#353337;
+      margin-top: 10px;
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 12px;
+      padding-left: 16px;
+
+    }
+    .card-foter {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
 }
+
 .btn-topics{
   text-align: center;
   margin: 25px;

@@ -6,12 +6,15 @@ class PagesController < ApplicationController
   end
 
   def discover
-    # @category.topics = @topics
-    if params[:q].present?
-      @topics = Topic.where("LOWER(title) LIKE ?", "%" + params[:q].downcase + "%")
+    @categories = Category.all
+
+   if params[:q].present?
+      @target_category = Category.where(["name = ? ", "#{params[:q]}" ])
+      @topics = Topic.where(["category_id = ? ", "#{@target_category.ids.first}" ])
     else
       @topics = Topic.all
     end
-    @categories = Category.all
+
+
   end
 end
