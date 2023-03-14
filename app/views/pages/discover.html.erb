@@ -1,6 +1,6 @@
 
-<div class="container">
-  <div class="title"> <h1> Discover all the catagories</h1></div>
+<div class="container" id="topics" >
+  <%# <div class="title"> <h1> All categories</h1></div> %>
     <div class="cards-wrapper">
       <div class="cards">
         <% @categories.each do |category| %>
@@ -13,13 +13,20 @@
         <% end %>
       </div>
   </div>
-  <br>
-  <div class="d-flex justify-content-around align-items-center flex-wrap" id="topics">
-    <% @topics.each do |topic| %>
-      <%= render "topics/card", topic: topic %>
-    <% end %>
+  <hr>
+  <div>
+  <h4 >Find your ideale mentor</h4>
+  <p>Connect online with trusted and verified mentors</p>
   </div>
-  <div class="btn-topics">
-     <%=link_to "See all topics", topics_path, class:"text-decoration-none bg-primary text-white p-2 rounded"%>
+  <br>
+  <div class="container" id="topics-container">
+    <div class="d-flex justify-content-around align-items-center flex-wrap" id="topics">
+      <% @topics.each do |topic| %>
+        <%= render "topics/card", topic: topic %>
+      <% end %>
+    </div>
+    <div class="btn-topics">
+      <%=link_to "See all topics", topics_path, class:"text-decoration-none p-2 rounded see-all-topics"%>
+    </div>
   </div>
 </div>

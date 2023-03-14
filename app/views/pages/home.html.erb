@@ -17,7 +17,7 @@
                 class: "form-control rounded p-3",
                 placeholder: "What do you want to learn?"
               %>
-              <%= submit_tag "Search", class: "btn btn-outline-primary p-3" %>
+              <%= submit_tag "Search", class: "btn btn-outline-primary p-3 search-new " %>
             <% end %>
           </section>
         </div>
@@ -36,7 +36,7 @@
   <div>
     <h3 class="title">Discover Our Categories</h3>
     <div class="Categories">
-      <% @categories.sample(6).each do |category| %>
+      <% @categories.sample(7).each do |category| %>
       <form action="/topics" method="get">
           <input type="hidden" name="q" value = "<%= category.name %>"/>
           <input  type = "submit" value = "<%= category.name %>" class="cat"/>

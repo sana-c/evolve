@@ -1,25 +1,25 @@
 <div id="topics" class="container mt-3">
   <div class="row">
     <div class="col-12">
-      <h1>Courses</h1>
+      <h1>All Courses</h1>
     </div>
   </div>
   <div class="row">
     <div class="col">
-       We found <%= @prof_count %> mentors waiting to help you.</p>
+       <%# We found <%= @prof_count %>
+       <%# mentors waiting to help you.</p> %>
+       <%# %>
     </div>
   </div>
   <br>
-  <br>
-  <div class="d-flex justify-content-around align-items-center flex-wrap">
-    <% @topics.each do |topic| %>
-      <%= render "card", topic: topic %>
-    <% end %>
-  </div>
-  <br>
-  <br>
-  <br>
+  <div class="container" id="topics-container" >
+    Total topics  <%= @topics.count %>
+    <div class="d-flex justify-content-around align-items-center flex-wrap">
+      <% @topics.each do |topic| %>
+        <%= render "card", topic: topic %>
+      <% end %>
+    </div>
 
-  Total topics  <%= @topics.count %>
+  </div>
 
 </div>

@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: none;
+
 }
 
 .card-category {
@@ -50,7 +51,30 @@
   transition: 0.5s all ease-in-out;
   border-radius: 6px;
   border:none;
-  &:hover{
-    transform: scale(1.2);
+  border-radius: 12px;
+    padding: 17px 27px;
+    color: #6b63ff;
+    background-color: white;
+    border: 1px solid #6b63ff;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      box-shadow: 5px;
+      color: white !important;
+      background-color: #6b63ff !important;
+      border: 1px solid #6b63ff !important;
+      transform: scale(1.2);
   }
+
+}
+h4, p {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.see-all-topics{
+background-color: #6b63ff !important;
+color: white !important;
 }

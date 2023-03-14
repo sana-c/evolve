@@ -6,7 +6,6 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 
@@ -61,18 +60,18 @@ html, body {
   ;}
 
 .right-div {
-  width:540px;
+  width:598px;
   height:550px;
-  background-image:url(https://www.signupgenius.com/cms/socialMediaImages/tips-for-teaching-online-lessons-1260x630.jpg);
-  transform:scaleX(-1);
-  background-position: -170px 0px;
+  background-image:url(https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjN8Njc2OTU0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+  // transform:scaleX(-1);
+  // background-position: -170px 0px;
   background-size:cover;
+  background-repeat: no-repeat;
   position: absolute;
   top:0;
-  bottom: 0;
   right: 0;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 3px 3px 3px 3px rgb(204, 204, 204);
 }
 
@@ -92,16 +91,34 @@ html, body {
   letter-spacing: 3px;
   font-weight: 700;
   color: #2C2C2C;
-  margin-top:10px;
+  margin-top:100px;
   margin-left:40px;}
 
 .content-description {
-  margin-top: -20px;
+  margin-top: 0px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #7e7e7e;
   line-height: 22px;
-  margin-left:40px;}
+  margin-left:40px;
+}
+
+  .Search{
+    margin-left: 30px;
+    margin-top:30px;
+    padding: 10px;
+  }
+    .search-new {
+      color: white !important;
+      background-color: #6b63ff !important;
+      border: 1px solid #6b63ff !important;
+
+      &:hover {
+        color: #6b63ff !important;
+        background-color: white !important;
+      }
+
+    }
 
 #explore a {
 	position:absolute;
@@ -132,17 +149,20 @@ html, body {
   padding-left: 100px;
 
   .cat{
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/323/639/small/luxury-beige-background-free-vector.jpg);
-    border-radius: 5px;
-    padding: 15px 20px;
-    color:black;
-    border:none;
+    border-radius: 12px;
+    padding: 17px 27px;
+    color:#6b63ff ;
+    background-color: white;
+    border:1px solid #6b63ff;
     margin-bottom: 5px;
     transition: 0.5s;
     &:hover{
       cursor: pointer;
       transform: scale(1.2);
       box-shadow: 5px;
+      color: white !important;
+        background-color: #6b63ff !important;
+        border: 1px solid #6b63ff !important;
 
     }
   }
@@ -151,7 +171,7 @@ html, body {
 .teacher {
   border: none;
   border-radius: 24px;
-  height: 70vh;
+  height: 60vh;
   margin: 24px auto;
   width: 80vw;
   background-size: cover;
@@ -164,10 +184,11 @@ html, body {
     border:none;
     padding: 7px;
     border-radius: 7px;
-    background-color: #e9b273;
-    color:black;
+    background-color:#6b63ff;
+    color:white;
   }
 }
 .title{
   padding-left:100px;
 }
+
