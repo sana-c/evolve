@@ -1,0 +1,26 @@
+    <%= link_to topic_path(topic) do %>
+        <div class="card">
+          <%= cl_image_tag topic.photo.key, class: "course-img" %>
+          <div class="floating">
+            <%= cl_image_tag topic.user.photo.key, class: "img-floating", crop: :thumb, gravity: :face %>
+            <h5><%= topic.user.first_name%></h5>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-start mt-1 pt-1">
+            <div class="d-flex justify-content-start align-items-start w-100 py-1" >
+              <p> <%= topic.title %></p>
+            </div>
+            <div class="border-top mt-2 pt-2 w-100">
+              <div class="d-flex justify-content-around align-items-center w-100 py1 mb-1" >
+                <div class="card-foter">
+                  <i class="fa-solid fa-landmark"> </i>
+                  <h6><%= topic.category.name %></h6>
+                </div>
+                <div> <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>
+                </div>
+                <div> <span class="price"><%= topic.pph %> MAD</span> </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      <% end %>
