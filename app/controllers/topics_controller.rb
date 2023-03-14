@@ -15,7 +15,7 @@ class TopicsController < ApplicationController
     @user = current_user
     @teacher = @topic.user
     @reservation = Reservation.new
-    @review = Review.new 
+    @review = Review.new
   end
 
   def new
@@ -32,6 +32,11 @@ class TopicsController < ApplicationController
     else
       render :new
     end
+  end
+  def destroy
+    @topic = Topic.find(params[:id])
+    @topic.destroy
+    redirect_to topic_path, status: :see_other
   end
 
   private
