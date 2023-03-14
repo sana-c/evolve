@@ -24,10 +24,12 @@ a{
 
 .master-container{
   display: flex;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 100px;
   .main-container{
     flex-grow: 1;
     margin-left: 100px;
-
   }
   .sidebar-container{
     width:100px;
