@@ -4,8 +4,8 @@
     <figure class="front">
       <div class="left-div">
         <div class="Text">
-          <p class="content-name">Helping All Communities</p>
-          <p class="content-title">C.</p>
+          <%# <p class="content-name">Best Education From Your Home </p> %>
+          <p class="content-title">Best Education From Your Home</p>
           <p class="content-description">We are connecting course creators and students in a learning environment to grow and thrive in today’s digital era.
           Evolve’s platform makes the process easier, and allows for greater accessibility to master a skill and earn more income through digital courses and.</p>
         </div>
@@ -36,10 +36,10 @@
   <div>
     <h3 class="title">Discover Our Categories</h3>
     <div class="Categories">
-      <% @topics.each do |topic| %>
+      <% @categories.sample(6).each do |category| %>
       <form action="/topics" method="get">
-          <input type="hidden" name="q" value = "<%= topic.category.name %>"/>
-          <input  type = "submit" value = "<%= topic.category.name %>" class="cat"/>
+          <input type="hidden" name="q" value = "<%= category.name %>"/>
+          <input  type = "submit" value = "<%= category.name %>" class="cat"/>
       </form>
       <% end %>
     </div>
