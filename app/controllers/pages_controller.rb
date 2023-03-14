@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @topics = Topic.all
+    @categories = Category.all
   end
 
   def discover
