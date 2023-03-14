@@ -22,6 +22,7 @@
   margin-bottom: 15px;
 }
 
+
 .card-container img.round {
   width: 120px;
   height: 120px;
@@ -199,6 +200,34 @@
   border-radius: 5px;
 }
 .btn-reserve{
-  background-color: #0d6efd !important;
+  background-color: #6B63FF !important;
   border:none !important;
+}
+.reviews{
+  border:#6B63FF solid 1px;
+  padding: 30px;
+  border-radius: 8px;
+  margin:15px 0;
+  position: relative;
+}
+.icone{
+  color:#ffcb3f;
+  position: absolute;
+  bottom: 0;
+  right: 20px ;
+}
+.icone-plus{
+  color: gray !important;
+  font-size: 25px;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+  top: 11px;
+  right:25px ;
+  &:hover{
+    transform: scale(1.3);
+  }
+}
+.div-icone{
+  position:relative;
+
 }

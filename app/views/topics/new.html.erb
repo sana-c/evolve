@@ -1,6 +1,5 @@
 
 
-
 <div class="newtopic" style="background-image:url('<%= image_path("a.jpg") %>')">
 <h1>Please add a New Topic </h1>
 <%= simple_form_for [@user, @topic] do |f| %>
@@ -11,4 +10,6 @@
   <%= f.association :category  %>
   <%= f.submit "Create the topic", class: "btn btn-primary" %>
 <% end %>
+
+
 </div>
