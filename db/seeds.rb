@@ -169,10 +169,11 @@ topic1 = Topic.create(
   topic1.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic1.save
 
-  topic2 =Topic.create(
+  topic2 =Topic.create!(
   title: "AP Microeconomics",
   description: "Masters in Engineering, Masters in Economics, and Ph.D. in Economics. I have taught undergrads in a top university. I have set the following goals to become a successful educator: 1) to encourage a cheerful mindset to enable students to master the content; 2) to develop critical thinking skills through the use of innovative approaches; and 3) to enable students to develop practical communication skills",
   pph: 150,
+  user: user_13,
   category_id: category_1.id
   )
   file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnOO5uek6UHHrIizNdNT1yZtQ9u_pQucoqz1LNNrR&s")
@@ -180,13 +181,12 @@ topic1 = Topic.create(
   topic2.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic2.save
 
-  topic3= Topic.create(
+  topic3= Topic.create!(
   title: "Applied Econometrics and regression modeling",
   description: "Faculty in Quantitative Research, Econometrics, and Statistics. In addition, I have vast experience in research, including roles as thesis supervisor, senior research fellow, coordinator of research, consultant on contractual projects, and author.
   I am pleased that students from the University of Oxford, The University of Chicago (Booth), McGill University, Kings College, LSE, The Smith School of Business at Queen’s University, Lund University, and Stockholm University, got help and wrote lovely reviews for me.
   Also, I am humbled by the confidence of the professionals, including an international development professional researcher at the United Nations Capital Development Fund (UNCDF), the Managing Director at National Standard Finance (NSF), senior advisors in Government affiliated institutions, a research fellow at the Imperial College London, a visiting scholar at the Harvard University, and many more, who sought guidance for their professional needs.",
   pph: 500,
-
   user_id: user_2.id,
   category_id: category_1.id
   )
@@ -195,7 +195,7 @@ topic1 = Topic.create(
   topic3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic3.save
 
-  topic4=Topic.create(
+  topic4=Topic.create!(
   title: "Accounting",
   description: "I have a graduate degree in Financial Economics from the City, University of London and have tutored for 2 years while in London. I moved to Boston recently and got my MBA. I also have a 720 in GMAT.
   My students have experienced a 2 point improvement in their grades (i.e., C to an A-) over 4 weeks of teaching.
@@ -209,7 +209,7 @@ topic1 = Topic.create(
   topic4.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic4.save
 
-  topic5= Topic.create(
+  topic5= Topic.create!(
   title: "Macro and Microeconomics",
   description: "I am an online professional tutor with vast experience in the academic field. I delve into assisting my students in delivering quality academic work that meets the institutions' deliverables, goals, and objectives. I can achieve this outcome by aiding the students to research their projects thoroughly under my guidance.
   I put premium assistance as my top priority, as this is what my clients seek and what makes me different from other professional educators.",
@@ -222,7 +222,7 @@ topic1 = Topic.create(
   topic5.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic5.save
 
-  topic6= Topic.create(
+  topic6= Topic.create!(
   title: "ALgebra",
   description: "I am a graduated of Business Administration. I have been a tutor since my first year of College in 2012. That is something I am passionate of. I really enjoy helping students reach their goals. My satisfaction as a tutor is to be part of my students success.",
   pph: 200,
@@ -235,7 +235,7 @@ topic1 = Topic.create(
   topic6.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic6.save
 
-  topic7= Topic.create(
+  topic7= Topic.create!(
   title: "Biophysics",
   description: "I have a double major bachelor degree in Mathematics and Physics. I am currently a PhD candidate in Biophysics at Northeastern University at Boston. I have been teaching as a teaching assistant at Northeastern for 3 years. I am also doing online tutoring as one of my partime job to teach physics for students in Vietnam.",
   pph: 250,
@@ -247,7 +247,7 @@ topic1 = Topic.create(
   topic7.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
   topic7.save
 
-#   Topic.create(
+#   Topic.create!(
 #   title: "Algebra",
 #   description: "I have been tutoring math for over 25 years, I joined Broward College in 2005, the college where I earned my AA degree years before.
 #   During my 18 years at Broward College, I earned 3 of the highest honors awarded to faculty.
@@ -259,7 +259,7 @@ topic1 = Topic.create(
 #   user_id: user_7.id,
 #   category_id: category_2.id
 #   )
-#   Topic.create(
+#   Topic.create!(
 #   title: "Algorithms",
 #   description:"I started my Ph.D. program in spring 2007 at Rensselaer Polytechnic Institute (RPI) and graduated in May 2011. My Ph.D. work involved the development and implementation of efficient algorithms to solve inverse problems in finite elasticity. Its application to nonlinear elasticity imaging of breast tumors has shown great potential to diagnose breast cancer non-invasively. I became a finalist for the $30,000 Lemelson-MIT-RPI Prize with his findings on breast cancer diagnosis using nonlinear elasticity imaging.",
 #   pph: 300,
@@ -362,3 +362,45 @@ topic1 = Topic.create(
 #   category_id: category_6.id
 #   )
  p "Created #{Topic.count} topics"
+
+Review.create(content: "Igor is a great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics! this despite the fact that the son did not like mathematics before meeting Igor! Magic happens at Igor's lessons! The perfect teacher!", user: user_3, topic: topic2 )
+Review.create(content: "Very good teacher explains clearly", user: user_4, topic: topic2 )
+Review.create(content: "my daughter is almost 8 , she enjoy having lessons with her , we moved to a better school in another city and my daughter had difficulties in school, but thanks to Robynn, everything is getting much better, Robynn is our Hero.", user: user_2, topic: topic2 )
+Review.create(content: "un professeur à l’écoute des besoins de l'élève et qui s’adapte efficacement à son profil afin de le faire progresser", user: user_7, topic: topic2 )
+Review.create(content: "Très bon prof. Pédagogue, dévoué et responsable. Cours en Visio aussi efficace que les cours en présentiel grâce à des schémas et explications à la tablette. Je le recommande!", user: user_8, topic: topic1 )
+Review.create(content: " Très bon prof! Satisfait de mes premières séances avec lui. Bonne méthode, bonne pédagogie, et maîtrise parfaite du programme de la Terminale", user: user_1, topic: topic1 )
+Review.create(content: "Explique bien, détaille bien, merci", user: user_7, topic: topic1 )
+Review.create(content: "Explication très claire et a parfaitement répondu à toutes mes questions. Je recommende vivement !", user: user_9, topic: topic1 )
+Review.create(content: "Parfait ! bonne entente , super cool et explique bien", user: user_10, topic: topic1 )
+Review.create(content: "Parfait ! Explique bien, détaille bien, merci", user: user_1, topic: topic3 )
+Review.create(content: "enseignante extrêmement compétente et très clair dans ses explications.
+Illustre beaucoup et explique bien les concepts.", user: user_12, topic: topic3 )
+Review.create(content: "Parfait ! Très bonne pédagogie et s’adapte aux difficultés de l’élève en faisant un focus sur ses besoins. je la recommandons vivement", user: user_14, topic: topic3 )
+Review.create(content: "Super prof à l’écoute, très gentil et explique très bien. Je vous la conseil", user: user_19, topic: topic3 )
+Review.create(content: "Au top je suis très content", user: user_20, topic: topic3 )
+Review.create(content: "Malouka explique très bien, prend son temps afin de s’assurer que l’élève comprend parfaitement. Je recommande !", user: user_21, topic: topic2 )
+Review.create(content: "Parfait ! Au top je suis très content", user: user_16, topic: topic2 )
+Review.create(content: "Il a aidé à restructurer les notions du cours pour pouvoir les appliquer aux exercices fréquents.", user: user_15, topic: topic2 )
+Review.create(content: " Excellent professeur qui a su accompagner mon fils et lui permettre de faire une belle année .!", user: user_9, topic: topic2 )
+Review.create(content: "Trés impliqué ,réactif avec beaucoup de présence et d'accompagnement
+Trés bon prof", user: user_7, topic: topic4 )
+Review.create(content: "Si vous recherche une coach de vie, je vous recommande Thao. Elle vous donnera les meilleurs conseils sur vos problèmes quotidiens.", user: user_4, topic: topic4 )
+Review.create(content: "Ma fille en seconde est ravie de son cours. Elle a sentir alaise pour poser tous ses questions et les explications sont très claire.", user: user_21, topic: topic4 )
+Review.create(content: " Très claire. Le cours était rapide et bien organisé.", user: user_22, topic: topic4 )
+Review.create(content: "Super enseignante ! Marie a une réelle connaissance du cursus de classe prépa pour l'avoir elle-même suivi. Notre fille a eu un super feeling avec elle et au delà de l'aider sur ses cours elle l'a motivée à tenir le cap en prépa ce qui est 50% du travail en prépa.", user: user_5, topic: topic5 )
+Review.create(content: "Super enseignante, claire, rigoureuse, disponible, sympathique et plus encore.", user: user_4, topic: topic5 )
+Review.create(content: "Directe et efficace.", user: user_26, topic: topic5 )
+Review.create(content: "Marie est ponctuelle et bien organisée, elle permet à ses élèves de bien comprendre puis pratiquer par des exercices. Enfin elle communique ensuite les points de faiblesse restant à travailler c’est parfait", user: user_25, topic: topic5 )
+Review.create(content: "Marie est LA professeur que je recherchais : pédagogue, organisée et investie. Elle me donne plein de conseils au quotidien pour progresser et les résultats sont là : je suis passé de 8 à 14 en spé en quelques séances. Merci beaucoup", user: user_11, topic: topic5 )
+Review.create(content: "Marie est ponctuelle et bien organisée, elle permet à ses élèves de bien comprendre puis pratiquer par des exercices. Enfin elle communique ensuite les points de faiblesse restant à travailler c’est parfait", user: user_21, topic: topic5 )
+Review.create(content: "Méthodique, bienveillant et pédagogue", user: user_12, topic: topic6 )
+Review.create(content: "Ma fille est ravie de ce premier cours de maths. Très bien mené et expliqué par Jean-Charles. Celui-ci est par ailleurs très sympathique. Nous poursuivons avec lui.", user: user_21, topic: topic6 )
+Review.create(content: "Ma fille de 2de a beaucoup apprécie sa manière d'abordée les notions. Elle souhaite poursuivre avec Jean-charles.", user: user_26, topic: topic6 )
+Review.create(content: "Professeur compétent, ponctuel et à l'écoute.
+Obtenu mon bac S mention Bien avec son aide. Il m'a suivi depuis la seconde et les résultats se sont fait sentir !", user: user_23, topic: topic6 )
+Review.create(content: "Bon professeur, disponible, patient et méthodique", user: user_20, topic: topic6 )
+Review.create(content: "Très bon professeur, très pédagogue", user: user_10, topic: topic7 )
+Review.create(content: "Un professeur a l'écoute avec une vraie volonté de conseiller la meilleure approche pour l'élève. Mon fils était très satisfait par la capacité du professeur à l'accompagner tout en montant graduellement dans la complexité.", user: user_3, topic: topic7 )
+Review.create(content: " Le 1er cours s’est très bien passé. Moujib est sympathique et s’est montré pédagogue et à l’écoute.", user: user_7, topic: topic7 )
+Review.create(content: "Professionnel, compétent, patient et pédagogue ... Tout ce qu'on attend d'un excellent professeur", user: user_21, topic: topic7 )
+Review.create(content: " Très sérieux, très compétent, je recommande vivement.", user: user_23, topic: topic7 )

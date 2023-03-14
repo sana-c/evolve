@@ -17,8 +17,6 @@ class TopicsController < ApplicationController
     @reservation = Reservation.new
     @review = Review.new
     @category = @topic.category
-
-
   end
 
   def new
