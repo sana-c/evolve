@@ -101,11 +101,24 @@ a{
 }
 
 .newtopic {
-  color: rgb(255, 255, 255);
+  color: rgb(75, 72, 72);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
 
+  h1{
+    font-family: 'Playfair Display', serif;
+    padding-left: 125px;
+    margin-bottom: 20px;
+  }
+
+  .new-topic{
+    color: white !important;
+      background-color: #6b63ff !important;
+      border: 1px solid #6b63ff !important;
+  }
   form {
     width: 80%;
     margin: 0 auto;
