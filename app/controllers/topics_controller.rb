@@ -15,7 +15,10 @@ class TopicsController < ApplicationController
     @user = current_user
     @teacher = @topic.user
     @reservation = Reservation.new
-    @review = Review.new 
+    @review = Review.new
+    @category = @topic.category
+
+ 
   end
 
   def new
@@ -33,10 +36,15 @@ class TopicsController < ApplicationController
       render :new
     end
   end
+  def destroy
+    @topic = Topic.find(params[:id])
+    @topic.destroy
+    redirect_to topic_path, status: :see_other
+  end
 
   private
 
   def topic_params
-    params.require(:topic).permit(:title, :description, :pph, :category_id)
+    params.require(:topic).permit(:title, :description, :pph, :category_id, :photo)
   end
 end
