@@ -19,15 +19,14 @@
 
   <body>
     <div class="master-container">
-    <div class="sidebar-container">
-      <%= render "shared/navbar" %>
-    </div>
+      <div class="sidebar-container">
+        <%= render "shared/navbar" %>
+      </div>
       <div class="main-container">
         <%= yield %>
       </div>
     </div>
-    <%= render "shared/flashes" %>
-
     <%= render "shared/footer" %>
+    <%= render "shared/flashes" %>
   </body>
 </html>
