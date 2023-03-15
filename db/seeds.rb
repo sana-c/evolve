@@ -61,27 +61,27 @@ images = [
           "https://thumbs.dreamstime.com/b/faisant-%C3%A0-affaires-chaque-jour-69566819.jpg",
           "https://media.ouest-france.fr/v1/pictures/MjAyMTAyY2ExYzRhYjdiYjg3NjRhMmNkMDgwNDU5YmI4OWQ1ODI?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=8596dadb479de5807903f08b3b5ddc0d644e8ca8863d80dd0d35273f5867fbb0",
           "https://media.istockphoto.com/id/980790844/fr/vid%C3%A9o/portrait-de-jeunes-femmes-musulmanes-en-hijab-cherche-%C3%A0-huis-clos-deux-womens-assis-et-en.jpg?s=640x640&k=20&c=qfTWawc9D_7RQJVpihW_LMSlEtmmWfjqPV_1pZDG1bA=",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"]
+          "https://media.istockphoto.com/id/625889090/fr/photo/cr%C3%A9ation-dentreprise-de-design-de-mode-en-d%C3%A9marrage.jpg?s=612x612&w=0&k=20&c=AhI3Yj3mpIrOUJHtWHCmANG2JxfrNmYxJVl2gt2mD0k=",
+          "https://media.istockphoto.com/id/496768522/fr/photo/s%C3%A9duisante-femme-daffaires-de-porter-un-hijab-arabe-souriant-%C3%A0-la-cam%C3%A9ra.jpg?s=612x612&w=0&k=20&c=-f8wqc5ldUrg7A9WsrDftKgYmurky5bzgDQAv6wBrxQ=",
+          "https://media.istockphoto.com/id/1185367863/photo/smiling-business-woman-portrait.jpg?s=612x612&w=0&k=20&c=i19PDtTroZB0r1K1MmWARhdfQ4NHoTYB7SDyDn8W09I=",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP76yk4UPaSClbNxLRlY3i94wcuLwg5K3VNg&usqp=CAU",
+          "https://media.istockphoto.com/id/1335941248/fr/photo/plan-dun-beau-jeune-homme-debout-sur-un-fond-gris.jpg?s=612x612&w=0&k=20&c=YK04b0z7MLjvJ1V88YvIDn8F5B_LUMP9CTaj4ffm6V0=",
+          "https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo=",
+          "https://www.portraitprofessionnel.fr/wp-content/uploads/2020/02/portrait-professionnel-corporate-4.jpg",
+          "https://shootingphotodotbaindelumieredotcom.files.wordpress.com/2020/03/photo-de-profil-naturelle.jpg?w=584",
+          "https://www.portraitprofessionnel.fr/wp-content/uploads/2021/03/Photographe-avocat.jpg",
+          "https://i.pinimg.com/originals/e6/1a/2a/e61a2ad501fee76176ffbb3097da2741.jpg",
+          "https://www.francklods.fr/wp-content/uploads/2022/08/DSC_8048-Modifier-scaled.jpg",
+          "https://germainverhille-photographe.com/wp-content/uploads/2021/11/portrait-cv-linkedin-photographe-a-marseille.jpg",
+          "https://cosmosimage.com/wp-content/uploads/2021/03/CHARLES-portrait.jpg",
+          "https://guytessier.com/photographe/wp-content/portrait/portraits_corpo_haute-direction/Cote_Francois.jpg",
+          "https://guytessier.com/photographe/wp-content/portrait/portraits_corpo_haute-direction/Cote_Francois.jpg",
+          "https://www.portraitprofessionnel.fr/wp-content/uploads/2021/03/Photographe-profession-avocat.jpg",
+          "https://us.123rf.com/450wm/fizkes/fizkes2007/fizkes200700173/150873587-portrait-en-t%C3%AAte-d-un-jeune-r%C3%A9alisateur-ou-patron-de-race-blanche-dans-des-verres-posant-sur-le-lieu.jpg?ver=6",
+          "https://media.istockphoto.com/id/1040964880/fr/photo/rester-affam%C3%A9-de-succ%C3%A8s.jpg?s=170667a&w=0&k=20&c=330snOtJ9IcoZZcLX1dOgmN0mMV2xciWPgOh5jzGv7s=",
+          "https://media.istockphoto.com/id/1062868796/photo/portrait-of-successful-businessman-looking-at-camera-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=DNFFptHqHVTCH8skMH-6CSJNwdhHSNrQG2kDCd3Kx2w=",
+          "https://media.istockphoto.com/id/1193290236/photo/portrait-of-young-businessman-standing-in-his-office.jpg?s=170667a&w=0&k=20&c=7MJZANInviiQIv7Gxew1vcHvU0ivWU6axFnGV4Nin58=",
+          "https://media.istockphoto.com/id/518882918/photo/confident-businessman-leaning-on-glass-wall-in-office.jpg?s=612x612&w=0&k=20&c=sAsHlecwsDDz9HSmY-1VUwU5Sl_x1vCqPHjJVRggD-4="]
 
 
   puts "seeding " + images.count.to_s + " images"
@@ -366,41 +366,38 @@ topic1 = Topic.create(
 Review.create(content: "Igor is a great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics! this despite the fact that the son did not like mathematics before meeting Igor! Magic happens at Igor's lessons! The perfect teacher!", user: user_3, topic: topic2 )
 Review.create(content: "Very good teacher explains clearly", user: user_4, topic: topic2 )
 Review.create(content: "my daughter is almost 8 , she enjoy having lessons with her , we moved to a better school in another city and my daughter had difficulties in school, but thanks to Robynn, everything is getting much better, Robynn is our Hero.", user: user_2, topic: topic2 )
-Review.create(content: "un professeur à l’écoute des besoins de l'élève et qui s’adapte efficacement à son profil afin de le faire progresser", user: user_7, topic: topic2 )
-Review.create(content: "Très bon prof. Pédagogue, dévoué et responsable. Cours en Visio aussi efficace que les cours en présentiel grâce à des schémas et explications à la tablette. Je le recommande!", user: user_8, topic: topic1 )
-Review.create(content: " Très bon prof! Satisfait de mes premières séances avec lui. Bonne méthode, bonne pédagogie, et maîtrise parfaite du programme de la Terminale", user: user_1, topic: topic1 )
-Review.create(content: "Explique bien, détaille bien, merci", user: user_7, topic: topic1 )
-Review.create(content: "Explication très claire et a parfaitement répondu à toutes mes questions. Je recommende vivement !", user: user_9, topic: topic1 )
-Review.create(content: "Parfait ! bonne entente , super cool et explique bien", user: user_10, topic: topic1 )
-Review.create(content: "Parfait ! Explique bien, détaille bien, merci", user: user_1, topic: topic3 )
-Review.create(content: "enseignante extrêmement compétente et très clair dans ses explications.
-Illustre beaucoup et explique bien les concepts.", user: user_12, topic: topic3 )
-Review.create(content: "Parfait ! Très bonne pédagogie et s’adapte aux difficultés de l’élève en faisant un focus sur ses besoins. je la recommandons vivement", user: user_14, topic: topic3 )
-Review.create(content: "Super prof à l’écoute, très gentil et explique très bien. Je vous la conseil", user: user_19, topic: topic3 )
-Review.create(content: "Au top je suis très content", user: user_20, topic: topic3 )
-Review.create(content: "Malouka explique très bien, prend son temps afin de s’assurer que l’élève comprend parfaitement. Je recommande !", user: user_21, topic: topic2 )
-Review.create(content: "Parfait ! Au top je suis très content", user: user_16, topic: topic2 )
-Review.create(content: "Il a aidé à restructurer les notions du cours pour pouvoir les appliquer aux exercices fréquents.", user: user_15, topic: topic2 )
-Review.create(content: " Excellent professeur qui a su accompagner mon fils et lui permettre de faire une belle année .!", user: user_9, topic: topic2 )
-Review.create(content: "Trés impliqué ,réactif avec beaucoup de présence et d'accompagnement
-Trés bon prof", user: user_7, topic: topic4 )
-Review.create(content: "Si vous recherche une coach de vie, je vous recommande Thao. Elle vous donnera les meilleurs conseils sur vos problèmes quotidiens.", user: user_4, topic: topic4 )
-Review.create(content: "Ma fille en seconde est ravie de son cours. Elle a sentir alaise pour poser tous ses questions et les explications sont très claire.", user: user_21, topic: topic4 )
-Review.create(content: " Très claire. Le cours était rapide et bien organisé.", user: user_22, topic: topic4 )
-Review.create(content: "Super enseignante ! Marie a une réelle connaissance du cursus de classe prépa pour l'avoir elle-même suivi. Notre fille a eu un super feeling avec elle et au delà de l'aider sur ses cours elle l'a motivée à tenir le cap en prépa ce qui est 50% du travail en prépa.", user: user_5, topic: topic5 )
-Review.create(content: "Super enseignante, claire, rigoureuse, disponible, sympathique et plus encore.", user: user_4, topic: topic5 )
-Review.create(content: "Directe et efficace.", user: user_26, topic: topic5 )
-Review.create(content: "Marie est ponctuelle et bien organisée, elle permet à ses élèves de bien comprendre puis pratiquer par des exercices. Enfin elle communique ensuite les points de faiblesse restant à travailler c’est parfait", user: user_25, topic: topic5 )
-Review.create(content: "Marie est LA professeur que je recherchais : pédagogue, organisée et investie. Elle me donne plein de conseils au quotidien pour progresser et les résultats sont là : je suis passé de 8 à 14 en spé en quelques séances. Merci beaucoup", user: user_11, topic: topic5 )
-Review.create(content: "Marie est ponctuelle et bien organisée, elle permet à ses élèves de bien comprendre puis pratiquer par des exercices. Enfin elle communique ensuite les points de faiblesse restant à travailler c’est parfait", user: user_21, topic: topic5 )
-Review.create(content: "Méthodique, bienveillant et pédagogue", user: user_12, topic: topic6 )
-Review.create(content: "Ma fille est ravie de ce premier cours de maths. Très bien mené et expliqué par Jean-Charles. Celui-ci est par ailleurs très sympathique. Nous poursuivons avec lui.", user: user_21, topic: topic6 )
-Review.create(content: "Ma fille de 2de a beaucoup apprécie sa manière d'abordée les notions. Elle souhaite poursuivre avec Jean-charles.", user: user_26, topic: topic6 )
-Review.create(content: "Professeur compétent, ponctuel et à l'écoute.
-Obtenu mon bac S mention Bien avec son aide. Il m'a suivi depuis la seconde et les résultats se sont fait sentir !", user: user_23, topic: topic6 )
-Review.create(content: "Bon professeur, disponible, patient et méthodique", user: user_20, topic: topic6 )
-Review.create(content: "Très bon professeur, très pédagogue", user: user_10, topic: topic7 )
-Review.create(content: "Un professeur a l'écoute avec une vraie volonté de conseiller la meilleure approche pour l'élève. Mon fils était très satisfait par la capacité du professeur à l'accompagner tout en montant graduellement dans la complexité.", user: user_3, topic: topic7 )
-Review.create(content: " Le 1er cours s’est très bien passé. Moujib est sympathique et s’est montré pédagogue et à l’écoute.", user: user_7, topic: topic7 )
-Review.create(content: "Professionnel, compétent, patient et pédagogue ... Tout ce qu'on attend d'un excellent professeur", user: user_21, topic: topic7 )
-Review.create(content: " Très sérieux, très compétent, je recommande vivement.", user: user_23, topic: topic7 )
+Review.create(content: "She is an excellent help and makes it easy to follow complex topics and calculations. With Mariusz's help, I was able to pass my DAT exams. Highly recommend!", user: user_7, topic: topic2 )
+Review.create(content: "My lesson with Mariusz was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Mariusz to anyone in need of a good tutor.", user: user_8, topic: topic1 )
+Review.create(content: "Très bon prof! Satisfait de mes premières séances avec lui. Bonne méthode, bonne pédagogie, et maîtrise parfaite du programme de la Terminale", user: user_1, topic: topic1 )
+Review.create(content: "Great experience so far, I do enjoy the clear and methodical explanations of Physics and the support with solving problems :)", user: user_7, topic: topic1 )
+Review.create(content: "My lesson with Mariusz was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Mariusz to anyone in need of a good tutor.", user: user_9, topic: topic1 )
+Review.create(content: "Very lovely to work with. I have anxiety and Mark made me feel comfortable very quickly and went at a pace that suited my needs. Very kind and patient. Mark even went over our scheduled time to finish a problem we were on rather than stopping cold turkey. I highly recommend Mark! (I am in college level general physics)", user: user_10, topic: topic1 )
+Review.create(content: "Great tutor. Very thorough with explanations. Would definitely recommend to anyone.", user: user_1, topic: topic3 )
+Review.create(content: "Awesome and very helpful. 5 Stars!!!", user: user_12, topic: topic3 )
+Review.create(content: "Great tutor, helped me achieve an A in physics with multiple review sessions and cleared up all confusion.", user: user_14, topic: topic3 )
+Review.create(content: "Great teacher, he is great help!!", user: user_19, topic: topic3 )
+Review.create(content: "He is really supportive in letting you work through problems but stepping in when you have questions and helping you see what you're missing.", user: user_20, topic: topic3 )
+Review.create(content: "Has a deep understanding of Physics and explains solutions slowly and clearly, while also making sure to do everything needing to be done.", user: user_21, topic: topic2 )
+Review.create(content: " He helped me study for my IGCSE's and we covered a lot of topics very fast. he made sure I understood something before moving on to something else. I highly recommend him as a tutor.", user: user_16, topic: topic2 )
+Review.create(content: "I liked the teacher because she explains very briefly but informative. Right now we are learning for IGCSE exams and I can confirm that with this teach I can pass my exams!", user: user_15, topic: topic2 )
+Review.create(content: "Aya is a professional science tutor particular in physics and maths. She is very experienced, knowledgeable, friendly and patient. Her teaching skill is very effective and efficient. She can explain difficult concepts clearly and made my daughters understand easily. My daughters enjoy her classes very much. I strongly recommend her to anyone who wants to learn physics and maths.", user: user_9, topic: topic2 )
+Review.create(content: "My daughter likes Aya as her tutor, she now understands her physics more along the way. My daughter is shy to ask questions inside the classroom that why we decided a tutor for her. Aya is great tutor she said!", user: user_7, topic: topic4 )
+Review.create(content: "Great Tutor! Really good at explaining! Highly recommend!", user: user_4, topic: topic4 )
+Review.create(content: "Easy to understand the way he explain every topic, I feel improvement in my knowledge. I highly recommend him", user: user_21, topic: topic4 )
+Review.create(content: " Excellent teacher. He takes difficult concepts and simplifies them.", user: user_22, topic: topic4 )
+Review.create(content: "is very good for meth class I highly recommend for meth very nice and friendly 👍.", user: user_5, topic: topic5 )
+Review.create(content: "a very good tutor with effective methods that are clear and easy to understand.", user: user_4, topic: topic5 )
+Review.create(content: "He really help me by doing the questions together and the time went too fast but covered a lot of the things. Thank you!", user: user_26, topic: topic5 )
+Review.create(content: "Very patient, even under a time crunch he is good at explaining!", user: user_25, topic: topic5 )
+Review.create(content: "A really great tutor who simplifies and breaks down confusing concepts to help me understand them in simple terms. After being tutored by Saad my understanding of math concepts is much greater, and he's really helped me improve", user: user_11, topic: topic5 )
+Review.create(content: "Great Teacher, Has helped me alot and showed me easy methods to solve mathematical problems and how to work them out the right and easy way.", user: user_21, topic: topic5 )
+Review.create(content: "he is doing such an amazing job with my daughter. Definitely would recommend and buy more lesson.", user: user_12, topic: topic6 )
+Review.create(content: "Easy to get along with and helps provide a clear understanding of the course material", user: user_21, topic: topic6 )
+Review.create(content: "very patient and makes the work make sense when it is very confusing. The way she does the note taking is very easy to follow as well.", user: user_26, topic: topic6 )
+Review.create(content: "She is so patient and detailed and makes difficult concepts very easy to understand!", user: user_23, topic: topic6 )
+Review.create(content: "Fun, patient, overall wonderful teacher. My daughter really enjoyed her lesson. We will continue to have her tutor going forward.", user: user_20, topic: topic6 )
+Review.create(content: "Coach Pinky has been a great help in my daughter's lessons with math. She's very creative, patient, and understanding. My daughter loves her sessions and has learned much from Coach Pinky. Highly recommended.", user: user_10, topic: topic7 )
+Review.create(content: "She is a really patient , proficient and kind teacher , she teaches me the lessons in a way that I can understand everything very well", user: user_3, topic: topic7 )
+Review.create(content: " This teacher puts material your head to live there rent free", user: user_7, topic: topic7 )
+Review.create(content: "great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics", user: user_21, topic: topic7 )
+Review.create(content: " Very good teacher explains clearly", user: user_23, topic: topic7 )
