@@ -72,20 +72,18 @@ a{
   i{
     font-size: 1.2em;
     color: rgb(163, 163, 163);
-
   }
 
   span {
     display: inline;
     color: rgb(163, 163, 163);
-
   }
 }
 .logo{
-  color: #6944ff!important ;
-  font-size: 1.5em;
-  padding: 2px;
-  font-family: Work Sans;
+  img {
+    width: 98px;
+    margin: 20px 0 0 0;
+  }
 
 
 }

@@ -36,7 +36,7 @@ html, body {
 
 .container {
   width: 900px;
-  height: 550px;
+  // height: 550px;
   position: relative;
   perspective: 800px;
 	margin: 20px auto;
@@ -62,7 +62,7 @@ html, body {
 .right-div {
   width:598px;
   height:550px;
-  background-image:url(https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjN8Njc2OTU0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+  // background-image:url(https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjN8Njc2OTU0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
   // transform:scaleX(-1);
   // background-position: -170px 0px;
   background-size:cover;
@@ -191,4 +191,3 @@ html, body {
 .title{
   padding-left:100px;
 }
-

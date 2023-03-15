@@ -1,36 +1,35 @@
 
 
-<div class="d-flex flex-column">
+<div class="d-flex flex-column homoge-font-family">
     <div class="d-flex m-2 p-2 justify-content-around flex-row align-items-center first-div">
       <div>
         <%= cl_image_tag @teacher.photo.key, class: "round photo-show" %>
       </div>
-      <div class=" d-flex flex-column info-show">
-        <h3><%= @teacher.first_name %> <%= @teacher.last_name %></h3>
-        <h5><%= @topic.title %></h5>
-        <h5><%= @category.name %></h5>
-        <h5>Created <%= current_user.reservations.count %> courses</h5>
-        <h5><i class="fa-solid fa-language"></i> Speaks English, Arabic, Frensh</h5>
+      <div class=" d-flex flex-column info-show title-hhhhhhh">
+        <h3> <%= @topic.title %></h3>
+        <h4>  <i class="fa-solid fa-person-chalkboard"> </i> &nbsp;&nbsp;&nbsp;<%= @teacher.first_name %> <%= @teacher.last_name %></h4>
+        <h4>  <i class="fa-solid fa-landmark"> </i> &nbsp;&nbsp;&nbsp; <%= @category.name %></h4>
+        <%# <h4>Created <%= @teacher.reservations.count %>
+        <%# courses</h4> %>
+        <h4> <i class="fa-solid fa-language"></i> &nbsp;&nbsp;&nbsp; English, Arabic, French</h4>
       </div>
 
       <div class="d-none d-lg-block pl-lg-4 col-lg-4">
         <div class="sticky-top sticky-widget pt-7 is-sticky">
-          <div class="card-widget h-100 d-flex flex-column reserve">
+          <div class="card-widget h-100 d-flex flex-column reserve shadow">
 
-            <div class="mt-5 mb-3">
-              <input data-testid="online-radio-button" type="radio" class="custom-control-input" value="online" name="__BVID__2151" id="__BVID__2153">
-              <label class="custom-control-label" for="__BVID__2153">In person</label>
-              <input data-testid="online-radio-button" type="radio" class="custom-control-input" value="online" name="__BVID__2151" id="__BVID__2153">
-              <label class="custom-control-label" for="__BVID__2153">Online</label>
+            <div class="mt-2 mb-3">
+             <h4 class="khra-h4"><%= @topic.pph %> MAD per hour</h4>
             </div>
             <!--calendar-->
-            <span class="h-100">
+            <span class="h-100 px-2 mt-2 ">
               <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
                 <%= simple_form_for([@topic, @reservation]) do |f| %>
-                  <%= f.input :start, as: :string, label: "Date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
-                  <%= f.input :end, as: :string, label: '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
-
-                    <%= f.submit "Book Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
+                  <%= f.input :start, as: :string, label: "Starting date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
+                  <%= f.input :end, as: :string, label: "Finishing date & time" '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
+                  <div class="d-flex justify-content-center">
+                    <%= f.submit "Book your Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
+                  </div>
                 <% end %>
               </div> <!-- reservation/calendar-->
             </span>
@@ -41,7 +40,7 @@
     </div>
     <div class="container">
       <h2>About the Course</h2>
-      <p class="text"><%= @topic.description %></p>
+      <p class="text-waaaaaaaaa"><%= @topic.description %></p>
     </div>
     <div class="container">
       <div class="d-flex justify-content-center flex-column">
@@ -57,18 +56,18 @@
             <%= cl_image_tag review.user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <span><strong><%= review.user.fullname %></span></strong>
           </div>
-          <div>
-              <p ><%=review.content%></p>
-              <p class="icone">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              </p>
+            <div>
+                <p ><%=review.content%></p>
+                <p class="icone">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </p>
             </div>
-          </div>
-      <%end%>
         </div>
+      <%end%>
+
     </div>
 </div>
