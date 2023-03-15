@@ -1,17 +1,17 @@
 
-<div class="content">
+<div class="content ">
   <div class="container">
-    <div class="row">
-      <div class= "col-md-6">
-        <img src="https://res.cloudinary.com/dwkf3iefe/image/upload/v1678356680/img_ljkzxd.svg" class="img-fluid">
-      </div>
+    <%# <div class="row"> %>
+      <%# <div class= "col-md-6">
+        <img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk2fHx3ZWJzaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="img-fluid">
+      </div> %>
 
-      <div class= "col-md-6 contents">
+      <div class= "col-md-8 mx-6 contents" >
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="mb-4">
-              <h3>Log in</h3>
-              <p class="mb-4">...</p>
+              <h3>Login to ƎvolvE</h3>
+              <p class="mb-4"></p>
             </div>
 
               <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
@@ -39,20 +39,20 @@
                 </div>
 
                 <div id ="bttn" class="d-grid gap-2">
-                  <%= f.button :submit, "Log in" %>
+                  <%= f.button :submit, "Log in", class: "text-white" %>
                 </div>
 
               <% end %>
 
-              <span class="d-block text-left my-4 text-muted"> or sign up with </span>
+              <span class="d-block text-center my-4 text-muted "> or sign up with </span>
               <div class="social-login" >
-                <a href="#" class="fa-2x" style="text-decoration: none;">
+                <a href="#" class="fa-2x " style="text-decoration: none; margin-left:160px">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#" class="fa-2x" style="text-decoration: none;">
+                <a href="#" class="fa-2x " style="text-decoration: none; margin-left:10px">
                     <i class="fa-brands fa-google"></i>
                 </a>
-                <a href="#" class="fa-2x" style="text-decoration: none;">
+                <a href="#" class="fa-2x" style="text-decoration: none; margin-left:10px">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
               </div>
