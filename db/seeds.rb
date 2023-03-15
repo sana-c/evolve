@@ -57,10 +57,10 @@ user_26 =User.create!(bio: "Hi #{Faker::Movie.quote}", first_name: "Charlotte D.
 
 images = [
           "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMj A3fDB8MHxzZWFyY2h8NHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-          "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+          "https://media.istockphoto.com/id/1309328823/fr/photo/verticale-headshot-de-lemploy%C3%A9-masculin-de-sourire-dans-le-bureau.jpg?b=1&s=612x612&w=0&k=20&c=Y8DpRjL_WZSVmV9LEMAJgogYMGMkqQsvcZ2Nb5LBmrk=",
+          "https://thumbs.dreamstime.com/b/faisant-%C3%A0-affaires-chaque-jour-69566819.jpg",
+          "https://media.ouest-france.fr/v1/pictures/MjAyMTAyY2ExYzRhYjdiYjg3NjRhMmNkMDgwNDU5YmI4OWQ1ODI?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=8596dadb479de5807903f08b3b5ddc0d644e8ca8863d80dd0d35273f5867fbb0",
+          "https://media.istockphoto.com/id/980790844/fr/vid%C3%A9o/portrait-de-jeunes-femmes-musulmanes-en-hijab-cherche-%C3%A0-huis-clos-deux-womens-assis-et-en.jpg?s=640x640&k=20&c=qfTWawc9D_7RQJVpihW_LMSlEtmmWfjqPV_1pZDG1bA=",
           "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
           "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
           "https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
