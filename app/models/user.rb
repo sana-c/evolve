@@ -10,6 +10,6 @@ class User < ApplicationRecord
   has_one_attached :photo
 
   def fullname
-    self.first_name.capitalize + " " + self.last_name.capitalize
+    first_name.capitalize + " " + last_name.capitalize
   end
 end

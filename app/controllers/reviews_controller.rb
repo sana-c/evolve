@@ -14,7 +14,7 @@ class ReviewsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-  
+
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
