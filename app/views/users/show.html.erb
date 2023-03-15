@@ -5,7 +5,6 @@
       <%= cl_image_tag(@user.photo.key, width: 100, height: 100, crop: :fill) %>
     </div>
     <div class="center">
-      <hr>
       <h3><%= @user.first_name %> <%= @user.last_name %></h3>
       <p>Attended <%= @user.topics.count %> courses</p>
       <p>Created <%= @user.reservations.count %> courses</p>
@@ -15,8 +14,10 @@
     </button>
   </div>
   <div class="bio-create">
-    <div class="bio"><strong>Biography : </strong><br><br>
-    <p><%= @user.bio %></p></div>
+    <div class="bio">
+    <strong>Biography : </strong><br><br>
+    <p><%= @user.bio %></p>
+    </div>
     <div class="create">
       <%= link_to new_user_topic_path(current_user),class: "round-btn" do%>
       <i class="fa-regular fa-square-plus"></i> <p>Create new course</p>
