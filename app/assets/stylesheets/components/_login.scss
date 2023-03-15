@@ -1,7 +1,8 @@
 #bttn {
-  color: #ffffff;
-  background-color: #6d62f9;
+  color: white!important;
+  background-color: #6944ff;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 bite {
@@ -11,4 +12,22 @@ bite {
 .new_user .form_control {
   border-radius: 0;
   background-color: #edf2f5;
+}
+.social-login{
+  justify-content:center ;
+}
+
+.img-fluid{
+  margin-top:100px;
+}
+
+h3{
+  text-align: center;
+}
+.contents{
+  background-color: #edf2f5;
+  padding:30px;
+  margin:0 auto;
+  justify-content: center;
+
 }
