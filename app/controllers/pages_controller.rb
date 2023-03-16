@@ -7,7 +7,8 @@ class PagesController < ApplicationController
   end
 
   def discover
-    @categories = Category.all
+    # Pluck gets an array of ids, uniq gets rid of duplicates
+    @categories = Category.find(Topic.pluck(:category_id).uniq)
 
     if params[:q].present?
 
@@ -23,5 +24,5 @@ class PagesController < ApplicationController
   def sucess
 
   end
-  
+
 end
