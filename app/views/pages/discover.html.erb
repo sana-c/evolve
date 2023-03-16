@@ -32,7 +32,7 @@
           <div class="card-infos">
             <div>
               <h4 class="group-name"><%=topic.title%></h4>
-              <i class="fa-solid fa-person-chalkboard"></i> <span class="event-type"><%=topic.user.first_name%></span> 
+              <i class="fa-solid fa-person-chalkboard"></i> <span class="event-type"><%=topic.user.first_name%></span>
               <h4 class="group-description"> <%= topic.category.name %> </h4>
               <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>
             </div>
@@ -47,12 +47,8 @@
         <% end %>
       <% end %>
     </div>
-
-    <div class="btn-topics">
-      <%=link_to "See all courses", topics_path, class:"text-decoration-none p-2 rounded see-all-topics"%>
-    </div>
-
   </div>
-
-  <%=link_to "See all topics", topics_path, class:"text-decoration-none p-2 rounded see-all-topics"%>
+     <div class="btn-topics">
+      <%=link_to "See all courses", topics_path, class:"text-decoration-none p-2 rounded see-all-topics text-center text-white"%>
+    </div>
 </div>
