@@ -46,21 +46,10 @@
             <% end %>
         </li>
         <li >
-        <% if user_signed_in? %>
-
-            <%= link_to new_user_topic_path(current_user), class:"text-center" do %>
-            <i class="fa-solid fa-chalkboard-user"></i>
-            Become a Mentor
-            <% end %>
-
-        <% else %>
-          <a href="/users/sign_in" >
+          <%= link_to new_topic_path, class:"text-center" do %>
           <i class="fa-solid fa-chalkboard-user"></i>
-            <span class="text-center">Become a Mentor
-            </span>
-          </a>
-        <% end %>
-
+          Become a Mentor
+          <% end %>
         </li>
 
         <% if user_signed_in? %>

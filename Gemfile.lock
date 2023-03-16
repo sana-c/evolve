@@ -283,7 +283,7 @@ DEPENDENCIES
   capybara
   cloudinary
   debug
-  devise
+  devise (~> 4.9)
   dotenv-rails
   faker
   font-awesome-sass (~> 6.1)
