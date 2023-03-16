@@ -19,7 +19,7 @@
     <p><%= @user.bio %></p>
     </div>
     <div class="create">
-      <%= link_to new_user_topic_path(current_user),class: "round-btn" do%>
+      <%= link_to user_topic_path(current_user),class: "round-btn" do%>
       <i class="fa-regular fa-square-plus"></i> <p>Create new course</p>
       <% end %>
     </div>

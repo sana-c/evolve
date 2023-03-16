@@ -18,21 +18,27 @@
         <div class="sticky-top sticky-widget pt-7 is-sticky">
           <div class="card-widget h-100 d-flex flex-column reserve shadow">
 
-            <div class="mt-2 mb-3">
-             <h4 class="khra-h4"><%= @topic.pph %> MAD per hour</h4>
-            </div>
+
             <!--calendar-->
-            <span class="h-100 px-2 mt-2 ">
-              <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
-                <%= simple_form_for([@topic, @reservation]) do |f| %>
-                  <%= f.input :start, as: :string, label: "Starting date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } , disabled: !user_signed_in? %>
-                  <%= f.input :end, as: :string, label: "Finishing date & time" '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
-                  <div class="d-flex justify-content-center">
-                    <%= f.submit  user_signed_in? ? "Book your Lesson" : "Sign in to Book your Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
-                  </div>
-                <% end %>
-              </div> <!-- reservation/calendar-->
-            </span>
+            <% unless current_user.topics.pluck(:id).include?(@topic.id) %>
+              <div class="mt-2 mb-3">
+                <h4 class="khra-h4"><%= @topic.pph %> MAD per hour</h4>
+              </div>
+              <span class="h-100 px-2 mt-2 ">
+                <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
+                  <%= simple_form_for([@topic, @reservation]) do |f| %>
+                    <%= f.input :start, as: :string, label: "Starting date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } , disabled: !user_signed_in? %>
+                    <%= f.input :end, as: :string, label: "Finishing date & time" '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
+                    <div class="d-flex justify-content-center">
+                      <%= f.submit  user_signed_in? ? "Book your Lesson" : "Sign in to Book your Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
+                    </div>
+                  <% end %>
+                </div>
+              </span>
+            <% else %>
+              you own this course
+            <% end %>
+             <!-- reservation/calendar-->
           </div>
         </div>
       </div>
@@ -68,6 +74,36 @@
             </div>
         </div>
       <%end%>
-
     </div>
+</div>
+
+
+<div class="container-sm" >
+<div class="topic-cards">
+      <% @teacher.topics.each do |topic| %>
+      <%= link_to topic_path(topic), class:"text-decoration-none" do  %>
+        <div class="card m-1">
+        <% if topic.photo.attached? %>
+          <div style="background-image: url('<%= cl_image_path topic.photo.key %>')"></div>
+        <% else %>
+          <img src="https://source.unsplash.com/collection/2706932/"/>
+        <% end %>
+        <div class="card-infos">
+          <div>
+            <h4 class="group-name"><%=topic.title%></h4>
+            <i class="fa-solid fa-person-chalkboard"></i> <span class="event-type"><%=topic.user.first_name%></span>
+            <h4 class="group-description"> <%= topic.category.name %> </h4>
+            <i class="fa-solid fa-star"></i> <span class="text">4.9/5</span>
+          </div>
+          <h2 class="card-pricing"><%= topic.pph.round%>MAD/hour</h2>
+          <% if topic.user.photo.attached? %>
+            <%= cl_image_tag topic.user.photo.key, class: "card-user avatar-bordered"%>
+          <% else %>
+            <img src="https://source.unsplash.com/collection/gzUGvqgKHn0/" class="card-user avatar-bordered" />
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
