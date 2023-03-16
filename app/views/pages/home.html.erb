@@ -1,5 +1,5 @@
 
-<section class="container">
+<section class="container" style="height: 550px;">
   <div id="card">
     <figure class="front">
       <div class="left-div">
@@ -11,9 +11,9 @@
         </div>
         <div class="Search">
           <section id="explore">
-            <%= form_with url: topics_path, method: :get, class: "input-group" do %>
-              <%= text_field_tag :q,
-                params[:q],
+            <%= form_with url: discover_path, method: :get, class: "input-group" do %>
+              <%= text_field_tag :query,
+                params[:query],
                 class: "form-control rounded p-3",
                 placeholder: "What do you want to learn?"
               %>
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="right-div">
+      <div class="right-div" style="background-image:url('<%= image_path("home.png") %>')">
       </div>
     </figure>
     <!--<figure class="back"></figure>!-->
