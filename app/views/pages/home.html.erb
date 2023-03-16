@@ -37,7 +37,7 @@
     <h3 class="title">Discover Our Categories</h3>
     <div class="Categories">
       <% @categories.sample(7).each do |category| %>
-      <form action="/topics" method="get">
+      <form action="<%=discover_path%>" method="get">
           <input type="hidden" name="q" value = "<%= category.name %>"/>
           <input  type = "submit" value = "<%= category.name %>" class="cat"/>
       </form>
