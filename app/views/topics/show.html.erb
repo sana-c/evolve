@@ -20,7 +20,7 @@
 
 
             <!--calendar-->
-            <% unless current_user.topics.pluck(:id).include?(@topic.id) %>
+            <% unless @teacher.topics.pluck(:id).include?(@topic.id) %>
               <div class="mt-2 mb-3">
                 <h4 class="khra-h4"><%= @topic.pph %> MAD per hour</h4>
               </div>
