@@ -54,7 +54,7 @@
         <div class="reviews d-flex flex-column">
           <div class="m-b-4">
             <%= cl_image_tag review.user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <span><strong><%= review.user.fullname %></span></strong>
+            <span><strong><%= review.user.first_name %></span></strong>
           </div>
             <div>
                 <p ><%=review.content%></p>
