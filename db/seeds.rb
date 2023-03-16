@@ -473,6 +473,20 @@ file = URI.open("https://images.unsplash.com/photo-1548691905-57c36cc8d935?ixlib
 topic6.photo.attach(io: file, filename: "algebra.jpeg", content_type: "image/jpeg")
 topic6.save
 
+topic_algo = Topic.create!(
+  title: "Algorithms",
+  description: "I started my Ph.D. program in spring 2007 at Rensselaer Polytechnic Institute (RPI) and graduated in May 2011. My Ph.D. work involved the development and implementation of efficient algorithms to solve inverse problems in finite elasticity. Its application to nonlinear elasticity imaging of breast tumors has shown great potential to diagnose breast cancer non-invasively. I became a finalist for the $30,000 Lemelson-MIT-RPI Prize with his findings on breast cancer diagnosis using nonlinear elasticity imaging.",
+  pph: 260,
+
+  user_id: user_8.id,
+  category_id: category_2.id
+)
+
+file = URI.open("https://images.unsplash.com/photo-1547190027-9156686aa2f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+
+topic_algo.photo.attach(io: file, filename: "algebra.jpeg", content_type: "image/jpeg")
+topic_algo.save
+
 topic_six = Topic.create!(
   title: "Probability and Statistics",
   description: "I am a graduated of Business Administration. I have been a tutor since my first year of College in 2012. That is something I am passionate of. I really enjoy helping students reach their goals. My satisfaction as a tutor is to be part of my students success.",
@@ -528,7 +542,7 @@ file = URI.open("https://res.cloudinary.com/dwkf3iefe/image/upload/v1678966689/E
 topic_nine.photo.attach(io: file, filename: "content_marketing.jpg", content_type: "image/jpg")
 topic_nine.save
 
-topic_nine = Topic.create!(
+topic_swedish = Topic.create!(
   title: "Swedish",
   description: "Hi there, I'm Emma 🐝 I'm a Swedish-German content marketing and coding instructor currently based in Casablanca. I'm passionate about teaching my students the latest techniques in content marketing and coding, empowering them to create cutting-edge content and digital experiences. Whether we're discussing the latest trends in SEO or learning how to code a website from scratch, I always strive to make my classes engaging and interactive. When I'm not teaching, you can find me exploring the vibrant streets of Casablanca or indulging in my love of Moroccan cuisine. I'm thrilled to be sharing my knowledge and experience with students from all over the world.",
   pph: 140,
@@ -538,8 +552,8 @@ topic_nine = Topic.create!(
 
 file = URI.open("https://images.unsplash.com/photo-1614107151491-6876eecbff89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80")
 
-topic_nine.photo.attach(io: file, filename: "swedish.jpg", content_type: "image/jpg")
-topic_nine.save
+topic_swedish.photo.attach(io: file, filename: "swedish.jpg", content_type: "image/jpg")
+topic_swedish.save
 
 # Social Media Marketing ✔️
 topic_ten = Topic.create!(
@@ -625,7 +639,7 @@ topic_thirteen.photo.attach(io: file, filename: "b_to_b_marketing.jpg", content_
 topic_thirteen.save
 
 topic_bio = Topic.create!(
-  title: "Micro Biology",
+  title: "Soil Micro Biology",
   description: "Hi there, I'm Afafe, a B2B marketing and coding instructor. I love teaching my students how to create effective marketing strategies that target businesses and how to bring those strategies to life through coding. As a marketer, I find that the B2B space is always changing, and I enjoy staying up to date with the latest trends and best practices. When I'm not teaching, I like to read books on marketing and business strategy, and I find inspiration in successful B2B companies and their marketing campaigns. I'm excited to share my knowledge and expertise with my students and help them develop their skills in B2B marketing and coding.",
   pph: 300,
   user_id: user_6.id,
@@ -653,7 +667,7 @@ topic_chemistry.photo.attach(io: file, filename: "micro.jpg", content_type: "ima
 topic_chemistry.save
 
 # Direct Mail Marketing ✔️
-topic_thirteen = Topic.create!(
+topic_mark = Topic.create!(
   title: "Direct Marketing",
   description: "Hello, I'm Marco, a Direct Mail Marketing and coding instructor. I'm passionate about teaching my students how to create effective and engaging direct mail campaigns that can truly stand out in today's digital world. When I'm not teaching, I enjoy singing in the rain, finding joy in the simple moments of life. I also have exciting news that I will be a dad soon, and I can't wait to start this new chapter of my life. As a marketer, I find that direct mail is an underrated and effective way to reach a target audience, and I enjoy helping my students learn how to use coding to enhance their direct mail designs. I'm excited to share my knowledge and expertise with my students and help them develop their skills in direct mail marketing and coding.",
   pph: 300,
@@ -663,8 +677,8 @@ topic_thirteen = Topic.create!(
 
 file = URI.open("https://res.cloudinary.com/dwkf3iefe/image/upload/v1678966689/Evolve/direct_mail_marketing_fjxa5w.jpg")
 
-topic_thirteen.photo.attach(io: file, filename: "direct_mail_marketing.jpg", content_type: "image/jpg")
-topic_thirteen.save
+topic_mark.photo.attach(io: file, filename: "direct_mail_marketing.jpg", content_type: "image/jpg")
+topic_mark.save
 
 topic_music = Topic.create!(
   title: "Singing",
@@ -692,32 +706,16 @@ file = URI.open("https://images.unsplash.com/photo-1516116216624-53e697fedbea?ix
 topic_fourteen.photo.attach(io: file, filename: "programming.jpeg", content_type: "image/jpeg")
 topic_fourteen.save
 
-#   Topic.create!(
-#   title: "Algebra",
-#   description: "I have been tutoring math for over 25 years, I joined Broward College in 2005, the college where I earned my AA degree years before.
-#   During my 18 years at Broward College, I earned 3 of the highest honors awarded to faculty.
-#   - Professor of the Year (first-year teaching)
-#   - Endowed Teaching Chair Award
-#   - Last year’s Online Professor of the Year
-#   I love teaching math and I want to continue inspiring young people.",
-#   pph: 250,
-#   user_id: user_7.id,
-#   category_id: category_2.id
-#   )
-#   Topic.create!(
-#   title: "Algorithms",
-#   description:"I started my Ph.D. program in spring 2007 at Rensselaer Polytechnic Institute (RPI) and graduated in May 2011. My Ph.D. work involved the development and implementation of efficient algorithms to solve inverse problems in finite elasticity. Its application to nonlinear elasticity imaging of breast tumors has shown great potential to diagnose breast cancer non-invasively. I became a finalist for the $30,000 Lemelson-MIT-RPI Prize with his findings on breast cancer diagnosis using nonlinear elasticity imaging.",
-#   pph: 300,
-#   user_id: user_8.id,
-#   category_id: category_2.id
-#   )
-#   Topic.create(
+# More Topics to Add:
+
+#   topic_geo = Topic.create(
 #   title: "Geometry",
-#   description:" am a private tutor that has been teaching and tutoring all subjects of math and science for 7 years. I like to think of myself as a personal trainer of academics. I graduated with a degree in 2013 from the University of California Berkeley, but I am going back to school right now at the University of Oregon. I hope to teach you that math and science can be fun, or at least to take the stress away from learning the subjects.",
+#   description: "am a private tutor that has been teaching and tutoring all subjects of math and science for 7 years. I like to think of myself as a personal trainer of academics. I graduated with a degree in 2013 from the University of California Berkeley, but I am going back to school right now at the University of Oregon. I hope to teach you that math and science can be fun, or at least to take the stress away from learning the subjects.",
 #   pph: 300,
 #   user_id: user_9.id,
 #   category_id: category_2.id
 #   )
+
 #   Topic.create(
 #   title: "Calculus",
 #   description:"I am an Engineer and giving mathematics and physics classes since 2015 with Fantastic 8 years. I have taught more than thousands students of different countries and they all are satisfied with my thorough knowledge, experience and deep explanation. All my students have passed with HIGHER GRADES in their courses after taking class.
@@ -727,12 +725,6 @@ topic_fourteen.save
 #   category_id: category_2.id
 #   )
 #   Topic.create(
-#   title: "Programming language",
-#   description:"PhD student in Electrical Engineering and Computing at the University of Texas in San Antonio (USA), graduated in Software Engineering at the Federal University of Amazonas (BR), I have worked in companies and am currently in a research project involving Artificial Intelligence, Database and Scientific Method. I seek to teach students from basic to advanced level to program and analyze algorithms as software architects.",
-#   pph: 300,
-#   user_id: user_12.id,
-#   category_id: category_3.id
-#   )
 #   Topic.create(
 #   title: "Trigonometry",
 #   description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
@@ -742,13 +734,6 @@ topic_fourteen.save
 #   user_id: user_13.id,
 #   category_id: category_2.id
 #   )
-#   Topic.create(
-#   title: "Trigonometry",
-#   description:"I love, live and breathe mathematics, and I intend to do a PhD in this subject that inspires me so much.
-#   Besides loving math, teaching by itself is one of my greatest passions as it allows me to be a more critical thinker. It also allows me to form connections through mentoring, something that inspires me deeply.
-#   Oh, and I'm also a jiu jitsu teacher and a professional athlete! :)",
-#   pph: 300,
-
 #   user_id: user_13.id,
 #   category_id: category_2.id
 #   )
@@ -806,43 +791,333 @@ topic_fourteen.save
 #   user_id: user_25.id,
 #   category_id: category_6.id
 #   )
+
 p "Created #{Topic.count} Topics ✅"
 
-Review.create(content: "Igor is a great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics! this despite the fact that the son did not like mathematics before meeting Igor! Magic happens at Igor's lessons! The perfect teacher!", user: user_3, topic: topic2 )
-Review.create(content: "Very good teacher explains clearly", user: user_4, topic: topic2 )
-Review.create(content: "my daughter is almost 8 , she enjoy having lessons with her , we moved to a better school in another city and my daughter had difficulties in school, but thanks to Robynn, everything is getting much better, Robynn is our Hero.", user: user_2, topic: topic2 )
-Review.create(content: "She is an excellent help and makes it easy to follow complex topics and calculations. With Mariusz's help, I was able to pass my DAT exams. Highly recommend!", user: user_7, topic: topic2 )
-Review.create(content: "My lesson with Mariusz was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Mariusz to anyone in need of a good tutor.", user: user_8, topic: topic1 )
-Review.create(content: "Très bon prof! Satisfait de mes premières séances avec lui. Bonne méthode, bonne pédagogie, et maîtrise parfaite du programme de la Terminale", user: user_1, topic: topic1 )
-Review.create(content: "Great experience so far, I do enjoy the clear and methodical explanations of Physics and the support with solving problems :)", user: user_7, topic: topic1 )
-Review.create(content: "My lesson with Mariusz was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Mariusz to anyone in need of a good tutor.", user: user_9, topic: topic1 )
-Review.create(content: "Very lovely to work with. I have anxiety and Mark made me feel comfortable very quickly and went at a pace that suited my needs. Very kind and patient. Mark even went over our scheduled time to finish a problem we were on rather than stopping cold turkey. I highly recommend Mark! (I am in college level general physics)", user: user_10, topic: topic1 )
-Review.create(content: "Great tutor. Very thorough with explanations. Would definitely recommend to anyone.", user: user_1, topic: topic3 )
-Review.create(content: "Awesome and very helpful. 5 Stars!!!", user: user_12, topic: topic3 )
-Review.create(content: "Great tutor, helped me achieve an A in physics with multiple review sessions and cleared up all confusion.", user: user_14, topic: topic3 )
-Review.create(content: "Great teacher, he is great help!!", user: user_19, topic: topic3 )
-Review.create(content: "He is really supportive in letting you work through problems but stepping in when you have questions and helping you see what you're missing.", user: user_20, topic: topic3 )
-Review.create(content: "Has a deep understanding of Physics and explains solutions slowly and clearly, while also making sure to do everything needing to be done.", user: user_21, topic: topic2 )
-Review.create(content: " He helped me study for my IGCSE's and we covered a lot of topics very fast. he made sure I understood something before moving on to something else. I highly recommend him as a tutor.", user: user_16, topic: topic2 )
-Review.create(content: "I liked the teacher because she explains very briefly but informative. Right now we are learning for IGCSE exams and I can confirm that with this teach I can pass my exams!", user: user_15, topic: topic2 )
-Review.create(content: "Aya is a professional science tutor particular in physics and maths. She is very experienced, knowledgeable, friendly and patient. Her teaching skill is very effective and efficient. She can explain difficult concepts clearly and made my daughters understand easily. My daughters enjoy her classes very much. I strongly recommend her to anyone who wants to learn physics and maths.", user: user_9, topic: topic2 )
-Review.create(content: "My daughter likes Aya as her tutor, she now understands her physics more along the way. My daughter is shy to ask questions inside the classroom that why we decided a tutor for her. Aya is great tutor she said!", user: user_7, topic: topic4 )
-Review.create(content: "Great Tutor! Really good at explaining! Highly recommend!", user: user_4, topic: topic4 )
-Review.create(content: "Easy to understand the way he explain every topic, I feel improvement in my knowledge. I highly recommend him", user: user_21, topic: topic4 )
-Review.create(content: " Excellent teacher. He takes difficult concepts and simplifies them.", user: user_22, topic: topic4 )
-Review.create(content: "is very good for meth class I highly recommend for meth very nice and friendly 👍.", user: user_5, topic: topic5 )
-Review.create(content: "a very good tutor with effective methods that are clear and easy to understand.", user: user_4, topic: topic5 )
-Review.create(content: "He really help me by doing the questions together and the time went too fast but covered a lot of the things. Thank you!", user: user_26, topic: topic5 )
-Review.create(content: "Very patient, even under a time crunch he is good at explaining!", user: user_25, topic: topic5 )
-Review.create(content: "A really great tutor who simplifies and breaks down confusing concepts to help me understand them in simple terms. After being tutored by Saad my understanding of math concepts is much greater, and he's really helped me improve", user: user_11, topic: topic5 )
-Review.create(content: "Great Teacher, Has helped me alot and showed me easy methods to solve mathematical problems and how to work them out the right and easy way.", user: user_21, topic: topic5 )
-Review.create(content: "he is doing such an amazing job with my daughter. Definitely would recommend and buy more lesson.", user: user_12, topic: topic6 )
-Review.create(content: "Easy to get along with and helps provide a clear understanding of the course material", user: user_21, topic: topic6 )
-Review.create(content: "very patient and makes the work make sense when it is very confusing. The way she does the note taking is very easy to follow as well.", user: user_26, topic: topic6 )
-Review.create(content: "She is so patient and detailed and makes difficult concepts very easy to understand!", user: user_23, topic: topic6 )
-Review.create(content: "Fun, patient, overall wonderful teacher. My daughter really enjoyed her lesson. We will continue to have her tutor going forward.", user: user_20, topic: topic6 )
-Review.create(content: "Coach Pinky has been a great help in my daughter's lessons with math. She's very creative, patient, and understanding. My daughter loves her sessions and has learned much from Coach Pinky. Highly recommended.", user: user_10, topic: topic7 )
-Review.create(content: "She is a really patient , proficient and kind teacher , she teaches me the lessons in a way that I can understand everything very well", user: user_3, topic: topic7 )
-Review.create(content: " This teacher puts material your head to live there rent free", user: user_7, topic: topic7 )
-Review.create(content: "great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics", user: user_21, topic: topic7 )
-Review.create(content: " Very good teacher explains clearly", user: user_23, topic: topic7 )
+# Reviews for Finance // Hamza
+Review.create(
+  content: "Very good teacher! Hamza explains clearly and knows exactly what he is doing!",
+  user: user_4,
+  topic: topic1
+)
+
+Review.create(
+  content: "My daughter is almost 8 and enjoyed having lessons with Hamza so much, we moved to a better school in another city and my daughter had difficulties in school, but thanks to this teacher, everything is getting much better, our Hero!!!",
+  user: user_2,
+  topic: topic1
+)
+
+Review.create(
+  content: "Loved this teacher so much. Hamza is one of the smartest people I've ever met! Such a wonderful human 🌱",
+  user: user_5,
+  topic: topic1
+)
+
+# Reviews for AP Microeconomics // Filip
+Review.create(
+  content: "Great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with them, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics! this despite the fact that the son did not like mathematics before meeting Filip! Magic happens at Filip's lessons! The perfect teacher!",
+  user: user_3,
+  topic: topic2
+)
+
+Review.create(
+  content: "She is an excellent help and makes it easy to follow complex topics and calculations. With Mariusz's help, I was able to pass my DAT exams. Highly recommend!",
+  user: user_7,
+  topic: topic2
+)
+
+Review.create(
+  content: "Loved this teacher so much. Hamza is one of the smartest people I've ever met! Such a wonderful human 🌱",
+  user: user_5,
+  topic: topic2
+)
+
+# Reviews for Video Game Animation // Abdelrahman
+Review.create(
+  content: "My lesson with Abderrahmane was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Abderrahmane to anyone in need of a good tutor when it comes to Animation.",
+  user: user_8,
+  topic: topic_abdel
+)
+
+Review.create(
+  content: "My lesson with Abderrahmane was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Abderrahmane to anyone in need of a good tutor when it comes to Animation.",
+  user: user_2,
+  topic: topic_abdel
+)
+
+Review.create(
+  content: "My lesson with Abderrahmane was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend Abderrahmane to anyone in need of a good tutor when it comes to Animation.",
+  user: user_2,
+  topic: topic_abdel
+)
+
+# Reviews for Photography 101 // Aimane
+Review.create(
+  content: "Très bon prof! Satisfait de mes premières séances avec lui. Bonne méthode, bonne pédagogie, et maîtrise parfaite du Photography 101",
+  user: user_1,
+  topic: topic_aymen
+)
+
+Review.create(
+  content: "Great experience so far, I do enjoy the clear and methodical explanations of Photography 101 and the support with solving problems :)",
+  user: user_7,
+  topic: topic_aymen
+)
+
+Review.create(
+  content: "My lesson with Aimane was very effective, and to the point. We came up with a great plan and next steps. I'm quite excited for the coming months of test prep and would highly recommend him to anyone in need of a good tutor.",
+  user: user_9,
+  topic: topic_aymen
+)
+
+Review.create(
+  content: "Very lovely to work with. I have anxiety and he made me feel comfortable very quickly and went at a pace that suited my needs. Very kind and patient. He even went over our scheduled time to finish a problem we were on rather than stopping cold turkey. I highly recommend Aimane! (I am in college level general Photography 101)",
+user: user_10,
+topic: topic_aymen
+)
+
+# Reviews for Applied Econometrics // Lucia
+Review.create(
+  content: "Great tutor. Very thorough with explanations. Would definitely recommend to anyone.",
+  user: user_1,
+  topic: topic3
+)
+
+Review.create(
+  content: "Awesome and very helpful. 5 Stars!!!",
+  user: user_12,
+  topic: topic3
+)
+
+Review.create(
+  content: "Great tutor, helped me achieve an A in Applied Econometrics with multiple review sessions and cleared up all confusion.",
+  user: user_14,
+  topic: topic3
+)
+
+Review.create(
+  content: "Great teacher, he is great help!!",
+  user: user_19,
+  topic: topic3
+)
+
+Review.create(
+  content: "He is really supportive in letting you work through problems but stepping in when you have questions and helping you see what you're missing.",
+  user: user_20,
+  topic: topic3
+)
+
+# Reviews for CSS & JS // Amine
+Review.create(
+  content: "Has a deep understanding of CSS & JS and explains solutions slowly and clearly, while also making sure to do everything needing to be done.",
+  user: user_21,
+  topic: topic_amin
+)
+
+Review.create(
+  content: "He helped me study for my CSS & JS test and we covered a lot of topics very fast. he made sure I understood something before moving on to something else. I highly recommend him as a tutor.",
+  user: user_16,
+  topic: topic_amin
+)
+
+Review.create(
+  content: "I liked the teacher because he explains very briefly but informative. Right now we are learning for IGCSE exams and I can confirm that with this teach I can pass my exams!",
+  user: user_15,
+  topic: topic_amin
+)
+
+Review.create(
+  content: "Amine is a professional science tutor particular in physics and maths. She is very experienced, knowledgeable, friendly and patient. Her teaching skill is very effective and efficient. She can explain difficult concepts clearly and made my daughters understand easily. My daughters enjoy her classes very much. I strongly recommend her to anyone who wants to learn physics and maths.",
+  user: user_9,
+  topic: topic_amin
+)
+
+# Reviews for Accounting // Sanaa
+Review.create(
+  content: "My daughter likes Sanaa as her tutor, she now understands her physics more along the way. My daughter is shy to ask questions inside the classroom that why we decided a tutor for her. Aya is great tutor she said!",
+  user: user_7,
+  topic: topic4
+)
+
+Review.create(
+  content: "Great Tutor! Really good at explaining! Highly recommend Sanaa!",
+  user: user_4,
+  topic: topic4
+)
+
+Review.create(
+  content: "Easy to understand the way she explains every topic, I feel improvement in my knowledge. I highly recommend Sanaa",
+  user: user_21,
+  topic: topic4
+)
+
+Review.create(
+  content: "Excellent teacher. She takes difficult concepts and simplifies them.",
+  user: user_22,
+  topic: topic4
+)
+
+# Reviews for Marketing 101 // Omar
+Review.create(
+  content: "Omar is very good for Marketing 101 class I highly recommend for Marketing 101 very nice and friendly 👍.",
+  user: user_5,
+  topic: topic_eight
+)
+
+Review.create(
+  content: "Omar is a very good tutor with effective methods that are clear and easy to understand.",
+  user: user_4,
+  topic: topic_eight
+)
+
+Review.create(
+  content: "He really help me by doing the questions together and the time went too fast but covered a lot of the things. Thank you!",
+  user: user_26,
+  topic: topic_eight
+)
+
+Review.create(
+  content: "Very patient, even under a time crunch he is good at explaining!",
+  user: user_25,
+  topic: topic_eight
+)
+
+Review.create(
+  content: "A really great tutor who simplifies and breaks down confusing concepts to help me understand them in simple terms. After being tutored by Omar my understanding of math concepts is much greater, and he's really helped me improve",
+  user: user_11,
+  topic: topic_eight
+)
+
+Review.create(
+  content: "Great Teacher, Has helped me alot and showed me easy methods to solve mathematical problems and how to work them out the right and easy way. I LOVE OMAR",
+  user: user_21,
+  topic: topic_eight
+)
+
+# Reviews for Social Media Marketing // Zakarya
+Review.create(
+  content: "Zakarya is doing such an amazing job. Definitely would recommend and take more lessons. He is a real MAGICIAN when it comes to Social Media Marketing",
+  user: user_21,
+  topic: topic_ten
+)
+
+Review.create(
+  content: "Easy to get along with and helps provide a clear understanding of the course material. He also showed me his farm, a magnificent place",
+  user: user_12,
+  topic: topic_ten
+)
+
+  Review.create(
+  content: "Zakarya is very patient and makes the work make sense when it is very confusing. The way he does the note taking is very easy to follow as well.",
+  user: user_26,
+  topic: topic_ten
+)
+
+Review.create(
+  content: "He is so patient and detailed and makes difficult concepts very easy to understand! HE IS THE BEST",
+  user: user_23,
+  topic: topic_ten
+)
+
+  Review.create(
+  content: "Fun, patient, overall wonderful teacher. My daughter really enjoyed his lesson. We will continue to have her tutor going forward.",
+  user: user_20,
+  topic: topic_ten
+)
+
+# Reviews for Influencer Marketing // Hamza
+Review.create(
+  content: "Coach Hamza has been a great help in my daughter's lessons with Marketing. He's very creative, patient, and understanding. My daughter loves her sessions and has learned much from Hamza. Highly recommended.",
+  user: user_10,
+  topic: topic_eleven
+)
+
+Review.create(
+  content: "He is a really patient, proficient and kind teacher, he teaches me the lessons in a way that I can understand everything very well! HE IS THE BEST",
+  user: user_3,
+  topic: topic_eleven
+)
+
+Review.create(
+  content: "This teacher is hands down the coolest and best one I have ever had. He knows not only Marketing but also JS and he likes to drink coffee and walk around blocks too",
+  user: user_12,
+  topic: topic_eleven
+)
+
+Review.create(
+  content: "Hamza is a great tutor! He works with our son, he is 11 years old, every time my son looks forward to a lesson with Igor, and after the lesson he has such an expression on his face, as if he had completed a mission in the game! Satisfied and satisfied with the words: I love mathematics",
+  user: user_21,
+  topic: topic_eleven
+)
+
+Review.create(
+  content: "Amazing teacher explains clearly 💬",
+  user: user_23,
+  topic: topic_eleven
+)
+
+# Reviews for Content Marketing // Emma
+Review.create(
+  content: "Amazing teacher, we are happy to have her! Still has to learn, but we can't wait to see what's coming next!",
+  user: user_4,
+  topic: topic_nine
+)
+
+Review.create(
+  content: "Wonderful teacher who knows what she does! She did not only teach me Marketing but also how to write fun seeds 🌱",
+  user: user_3,
+  topic: topic_nine
+)
+
+Review.create(
+  content: "Great teacher but I don't understand her, she only speaks Swedish 🤷‍♀️",
+  user: user_7,
+  topic: topic_nine
+)
+
+Review.create(
+  content: "I went to her classes in Marrakesh and learned A LOT about Marketing! Not sure about her taste, though - She drinks coffee and eats French Fries at the same time??",
+  user: user_1,
+  topic: topic_nine
+)
+
+# Reviews for B2C Marketing // Ghizlane
+Review.create(
+  content: "My husband and I went to her classes and learned A LOT about Marketing! She is really nothing short of amazing. And such a beautiful human!",
+  user: user_1,
+  topic: topic_thirteen
+)
+
+Review.create(
+  content: "Wowowowowwww, just perfect!",
+  user: user_2,
+  topic: topic_thirteen
+)
+
+Review.create(
+  content: "Loved the classes and will take some again very soon!",
+  user: user_12,
+  topic: topic_thirteen
+)
+
+# Reviews for Print Marketing // Khalid
+
+Review.create(
+  content: "My husband and I went to Khalids classes and learned A LOT about Marketing! He is really amazing. And such a wonderful human!",
+  user: user_11,
+  topic: topic_twelve
+)
+
+Review.create(
+  content: "Love his english! And teaching style wow JUST WOW omg",
+  user: user_15,
+  topic: topic_twelve
+)
+
+Review.create(
+  content: "Just amazing!",
+  user: user_18,
+  topic: topic_twelve
+)
+
+p "Created #{Review.count} Reviews ⭐️⭐️⭐️⭐️⭐️"
