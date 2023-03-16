@@ -11,14 +11,15 @@ class ReservationsController < ApplicationController
   end
 
   def create
+
     resa = Reservation.create(
       start: params[:reservation][:start],
       end: params[:reservation][:end],
       topic_id: params[:topic_id]
     )
+
     resa.user = current_user
-    resa.save
-    redirect_to reservation_path(resa)
+    redirect_to reservation_path(resa) if resa.save!
   end
 
   private

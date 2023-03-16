@@ -25,10 +25,10 @@
             <span class="h-100 px-2 mt-2 ">
               <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
                 <%= simple_form_for([@topic, @reservation]) do |f| %>
-                  <%= f.input :start, as: :string, label: "Starting date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } %>
+                  <%= f.input :start, as: :string, label: "Starting date & time", placeholder: "From", wrapper_html: { class: "inline_field_wrapper" } , disabled: !user_signed_in? %>
                   <%= f.input :end, as: :string, label: "Finishing date & time" '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
                   <div class="d-flex justify-content-center">
-                    <%= f.submit "Book your Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
+                    <%= f.submit  user_signed_in? ? "Book your Lesson" : "Sign in to Book your Lesson", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
                   </div>
                 <% end %>
               </div> <!-- reservation/calendar-->
@@ -54,7 +54,7 @@
         <div class="reviews d-flex flex-column">
           <div class="m-b-4">
             <%= cl_image_tag review.user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <span><strong><%= review.user.fullname %></span></strong>
+            <span><strong><%= review.user.first_name %></span></strong>
           </div>
             <div>
                 <p ><%=review.content%></p>

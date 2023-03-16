@@ -180,12 +180,19 @@ html, body {
 .styling{
   width:90vh;
   padding: 50px;
+  h3{
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+  }
   button{
     border:none;
     padding: 7px;
     border-radius: 7px;
     background-color:#6b63ff;
     color:white;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
   }
 }
 .title{

@@ -6,12 +6,14 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
-  margin-left: 100px;
+  max-width: 100vw;
+
 }
 
 .footer-links {
   display: flex;
   align-items: center;
+  padding-left: 150px;
 }
 
 .footer-links a {
