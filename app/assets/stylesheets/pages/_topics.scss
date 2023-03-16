@@ -2,14 +2,13 @@
 
 #topics {
   .card{
-
     font-family: 'Ubuntu', sans-serif !important;
     margin-top: 32px;
     width: 290px;
     height: 304px;
     border: 1px solid rgb(246, 245, 245);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
+    border-radius: 8px;
     h3{
       margin-top: 10px;
       font-family: 'Ubuntu', sans-serif !important;
@@ -17,10 +16,8 @@
       padding-left: 16px;
     }
     p{
-      margin-top: 10px;
       font-family: 'Ubuntu', sans-serif !important;
       font-size: 16px;
-      padding-left: 16px;
     }
     i{
       color: #b1b1b1;
