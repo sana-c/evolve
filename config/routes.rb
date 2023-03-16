@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
 
   devise_for :users
+  resources :topics, only: :new
+
   resources :users do
-    resources :topics, only: [:show, :create, :new]
+    resources :topics, only: [:show, :create]
   end
 
   resources :topics do

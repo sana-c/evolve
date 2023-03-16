@@ -60,7 +60,7 @@
   border: 1px solid #6b63ff;
   margin-bottom: 5px;
   transition: 0.5s;
-  
+
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -70,7 +70,7 @@
     border: 1px solid #6b63ff !important;
     transform: scale(1.2);
   }
-  
+
 }
 h4, p {
   font-family: 'Playfair Display', serif !important;
@@ -130,14 +130,14 @@ h4, p {
   padding: 12px;
 }
 
-.card-user {
-  position: absolute ;
-  top: 150px;
-  right: 30px;
+// .card-user {
+//   position: absolute ;
+//   top: 150px;
+//   right: 30px;
 
-background-color: #6b63ff !important;
-color: white !important;
-font-size: 24px;
-padding: 50px 50px!important;
+// background-color: #6b63ff !important;
+// color: white !important;
+// font-size: 24px;
+// // padding: 50px 50px!important;
 
-}
+// }
