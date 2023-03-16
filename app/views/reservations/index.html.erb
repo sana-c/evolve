@@ -1,13 +1,19 @@
+<div class="container">
+  <h1 class="text-center mt-5 mb-4">All Lessons Reservations</h1>
 
-
-<h1>All lessons reservations</h1>
-<br>
-<% @reservations.each do |r| %>
-  <hr>
-
-  <div><%= User.find(r.topic.user_id).first_name %></div>
-  <div><%= r.topic.title %></div>
-  <div><%= r.start %></div>
-  <div><%= r.end %></div>
-<% end %>
-<br>
+  <% @reservations.each do |r| %>
+    <hr>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-2">
+        <h5><%= r.topic.title %></h5>
+        <p class="mb-0"><%= User.find(r.topic.user_id).first_name %></p>
+      </div>
+      <div class="col-6 col-md-3 mb-2">
+        <p><i class="bi bi-calendar3 me-2"></i><%= r.start.strftime('%b %d, %Y') %></p>
+      </div>
+      <div class="col-6 col-md-3 mb-2">
+        <p><i class="bi bi-clock me-2"></i><%= r.start.strftime('%I:%M %p') %> - <%= r.end.strftime('%I:%M %p') %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

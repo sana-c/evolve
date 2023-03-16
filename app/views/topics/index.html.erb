@@ -1,14 +1,22 @@
 <div id="topics" class="container mt-3">
   <div class="row">
     <div class="col-12">
-      <h1>All Topic</h1>
+
+      <h1>All Topics</h1>
     </div>
   </div>
-
+  <div class="row">
+    <%# <div class="col">
+       <%# We found <%= @prof_count %>
+       <%# mentors waiting to help you.</p> %>
+       <%# %>
+    <%# </div> %>
+  </div>
   <br>
-  
+ 
    <div class="container-sm" >
     <div class="topic-cards">
+
       <% @topics.each do |topic| %>
       <%= link_to topic_path(topic), class:"text-decoration-none" do  %>
           <div class="card m-1">
@@ -35,6 +43,8 @@
         <% end %>
       <% end %>
     </div>
+
+  <div >Total topics <%= @topics.count %></div>
   </div>
 
 </div>

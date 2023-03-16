@@ -1,10 +1,91 @@
-  <hr>
+<div class="container " id="payment">
+ <div class="row">
+   <div class="col-md-7">
+     <div class="container">
+       <h1 class="h4">Confirm your lesson</h1>
+       <p class="mt-5 mb-0">Your card will not be charged until 24 hours after your lesson.</p>
+       <div class="mt-7 font-size-lg font-weight-semi-bold">Payment details</div>
+       <img src="https://cdn.tutorful.co.uk/assets/payment/cards.svg" alt="Accepted payment card brands" class="mt-4 col-md-6 col-lg-7 px-0">
+       <form method="POST">
+         <div role="group" class="form-group font-weight-semi-bold mt-4" >
+           <label for="card-name" class="d-block" >Name on card</label>
+           <input id="card-name" name="card-name" type="text" class="form-control">
+         </div>
 
-  <div><%= @teacher.first_name %></div>
-  <div><%= @student.first_name %></div>
-  <div><%= @topic.title %></div>
-  <div><%= @reservation.start %></div>
-  <div><%= @reservation.end %></div>
 
-<hr>
-<%= link_to 'Back to all your reservations',  reservations_path %>
+          <div role="group" class="form-group font-weight-semi-bold mt-4" >
+           <label for="card-name" class="d-block" >Name on card</label>
+           <input id="card-name" name="card-name" type="text" class="form-control">
+         </div>
+
+
+          <div role="group" class="d-flex justify-content-between align-items-center mt-4">
+           <div class="w-50" style="margin-right: 12px">
+             <label for="card-name" class="d-block" >Expiry date</label>
+             <input id="card-name" name="card-name" type="text" class="form-control" placeholder="MM/AA">
+           </div>
+           <div  class="w-50 ml-3" style="margin-left: 12px">
+             <label for="card-name" class="d-block" > Security code </label>
+             <input id="card-name" name="card-name" type="text" class="form-control" >
+           </div>
+         </div>
+         <br>
+
+        <a href="/sucess" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Accept</a>
+        <a href="/reservations" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Skip</a>
+
+
+
+       </form>
+     </div>
+   </div>
+
+   <div class="col-md-5" >
+
+
+   <div class="card mt-4" >
+     <div class="card-body">
+
+
+
+       <div class="d-flex flex-row">
+
+         <%= cl_image_tag @teacher.photo.key, class: "avatar-prof", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+         <div>
+           <h3 class="mb-2 mx-4 text-muted"><%= @teacher.first_name %></h3>
+           <h6 class="card-title mx-4 "><%= @topic.title %></h6>
+         </div>
+       </div>
+       <hr>
+       <h6 class="card-subtitle mb-2 text-muted">Reservation for : <b> <%= @student.first_name %> </b> </h6>
+       <p> <%= @reservation.start.strftime('%b %d, %Y') %> - From <b> <%= @reservation.start.strftime('%I:%M %p') %> </b> to  <b>  <%= @reservation.end.strftime('%I:%M %p') %> </b> </p>
+
+
+
+       <hr data-v-0a4a88f7="" class="my-3 light-gray-border">
+       <div data-v-0a4a88f7="" class="row no-gutters justify-content-between">
+         <div data-v-0a4a88f7="" class="col-auto">Price</div>
+         <div data-v-0a4a88f7="" class="col-auto"><%= @topic.pph %> MAD/h</div>
+       </div>
+       <div data-v-0a4a88f7="" class="row font-weight-semi-bold mt-3 no-gutters justify-content-between">
+         <div data-v-0a4a88f7="" class="col-auto">
+           Total
+         </div>
+         <div data-v-0a4a88f7="" class="col-auto">
+           <%= @topic.pph %> MAD
+         </div>
+       </div>
+       <hr data-v-0a4a88f7="" class="my-3 light-gray-border">
+       <div data-v-0a4a88f7="" class="row no-gutters justify-content-between">
+         <div data-v-0a4a88f7="" class="col-auto">To pay now</div>
+         <div data-v-0a4a88f7="" class="col-auto">0,00&nbsp;MAD</div>
+       </div>
+       <hr data-v-0a4a88f7="" class="my-3 light-gray-border">
+       <span data-v-0a4a88f7="" class="font-size-sm text-center d-none d-lg-block">We take payment 24 hours after each lesson. By adding your payment details you are agreeing to our
+         <a href="https://tutorful.co.uk/terms" target="_blank">Terms and Conditions</a> and <a href="https://tutorful.co.uk/privacy-policy" target="_blank" class="d-inline-block">Privacy Policy</a>
+       </span>
+     </div>
+   </div>
+   </div>
+ </div>
+</div>

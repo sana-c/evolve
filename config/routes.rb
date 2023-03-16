@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   get 'reservations/create'
   root to: "pages#home"
+  get "sucess", to: "pages#sucess"
+
+
   devise_for :users
   resources :users do
     resources :topics, only: [:show, :create, :new]
@@ -18,8 +21,8 @@ Rails.application.routes.draw do
   resources :topics, only: [:index, :show] do
     resources :reviews, only: [:new, :create]
   end
-  
-  
+
+
   resources :reviews, only: [:destroy]
 
   get '/categories', to: 'categories#index'

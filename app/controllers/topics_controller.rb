@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :index, :show ]
+  skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
     @prof_count = Topic.pluck(:user_id).uniq.count
@@ -34,6 +34,7 @@ class TopicsController < ApplicationController
       render :new
     end
   end
+
   def destroy
     @topic = Topic.find(params[:id])
     @topic.destroy
