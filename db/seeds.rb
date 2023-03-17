@@ -966,7 +966,7 @@ Review.create(
 
 Review.create(
   content: "Omar is a very good tutor with effective methods that are clear and easy to understand.",
-  user: user_4,
+  user: user_14,
   topic: topic_eight
 )
 

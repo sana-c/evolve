@@ -11,6 +11,7 @@ export default class extends Controller {
     console.log("Value ; ",this.unavailableValue);
     const startDateInput = document.getElementById('reservation_start');
     const endDateInput = document.getElementById('reservation_end');
+    const submitInput = document.getElementById('submit');
 
     if (startDateInput && endDateInput) {
       const unvailableDates = JSON.parse(this.unavailableValue)
@@ -23,6 +24,7 @@ export default class extends Controller {
         onChange: function(selectedDates, selectedDate) {
           if (selectedDate === '') {
             endDateInput.disabled = true;
+            submitInput.disabled = true;
           }
           let minDate = selectedDates[0];
           minDate.setDate(minDate.getDate());
@@ -30,11 +32,15 @@ export default class extends Controller {
           endDateInput.disabled = false;
         }
       });
+
       const endDateCalendar =
         flatpickr(endDateInput, {
           enableTime: true,
           dateFormat: "Y-m-d H:i",
           disable: unvailableDates,
+          onChange: function(selectedDates, selectedDate) {
+            submitInput.disabled = false;
+          }
           });
     }
   }
