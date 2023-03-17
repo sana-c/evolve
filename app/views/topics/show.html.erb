@@ -33,7 +33,11 @@
                      <%# , disabled: !user_signed_in? %>
                     <%= f.input :end, as: :string, label: "Finishing date & time" '&nbsp;'.html_safe, placeholder: "To", disabled: true, wrapper_html: { class: "inline_field_wrapper" } %>
                     <div class="d-flex justify-content-center">
-                      <%= f.submit  user_signed_in? ? "Book your Lesson" : "Sign in to Book your Lesson", id: "submit", disabled: "disabled", class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve" %>
+                      <%= f.submit  user_signed_in? ? "Book your Lesson" : "Sign in to Book your Lesson",
+                        id: "submit",
+                        class: "btn d-inline-flex justify-content-center align-items-center btn-primary btn-lg btn-block flex-row-reverse btn-reserve",
+                        data: { reservation_target: "submit"}
+                      %>
                     </div>
                   <% end %>
                 </div>

@@ -6,12 +6,17 @@ export default class extends Controller {
   static values = {
     unavailable: String
   }
+  static targets = ["submit"];
   connect() {
     console.log("calendar")
     console.log("Value ; ",this.unavailableValue);
     const startDateInput = document.getElementById('reservation_start');
     const endDateInput = document.getElementById('reservation_end');
     const submitInput = document.getElementById('submit');
+    const online = this.submitTarget.defaultValue == "Book your Lesson";
+    console.log("online", online, "this.submitTarget.innerHTML",  this.submitTarget.defaultValue )
+    submitInput.disabled = online;
+
 
     if (startDateInput && endDateInput) {
       const unvailableDates = JSON.parse(this.unavailableValue)
