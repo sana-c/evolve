@@ -24,7 +24,7 @@
             unless @teacher.topics.pluck(:id).include?(@topic.id)
              %>
               <div class="mt-2 mb-3">
-                <h4 class="khra-h4"><%= @topic.pph %> MAD per hour</h4>
+                <h4 class="topic-pph-h4"><%= @topic.pph %> MAD per hour</h4>
               </div>
               <span class="h-100 px-2 mt-2 ">
                 <div id='reservation-dates' data-controller="reservation" data-reservation-unavailable-value="<%= @teacher.reservations.pluck(:start).to_json %>" >
